@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Join Kinetic Concierge</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#dfdcdc",
+                        "outline-variant": "#afacac",
+                        "primary-container": "#fdd400",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-tertiary-fixed": "#3e4900",
+                        "inverse-surface": "#0e0e0e",
+                        "on-primary": "#fff2ce",
+                        "surface-dim": "#d6d4d3",
+                        "on-secondary-fixed-variant": "#5c5b5b",
+                        "surface-container": "#eae7e7",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#b02500",
+                        "on-primary-container": "#594a00",
+                        "inverse-primary": "#fdd400",
+                        "on-secondary": "#f5f2f1",
+                        "surface-container-high": "#e5e2e1",
+                        "on-error-container": "#520c00",
+                        "on-surface": "#2f2e2e",
+                        "on-tertiary": "#e6fe75",
+                        "error-container": "#f95630",
+                        "outline": "#787676",
+                        "primary-fixed": "#fdd400",
+                        "background": "#f9f6f5",
+                        "tertiary-fixed-dim": "#d0e862",
+                        "surface-container-highest": "#dfdcdc",
+                        "secondary-fixed-dim": "#d6d4d3",
+                        "tertiary-container": "#def76e",
+                        "on-secondary-fixed": "#403f3f",
+                        "on-error": "#ffefec",
+                        "secondary-container": "#e5e2e1",
+                        "error-dim": "#b92902",
+                        "surface": "#f9f6f5",
+                        "primary-fixed-dim": "#edc600",
+                        "surface-tint": "#6d5a00",
+                        "surface-container-low": "#f3f0ef",
+                        "secondary": "#5c5b5b",
+                        "inverse-on-surface": "#9e9c9c",
+                        "on-primary-fixed-variant": "#645300",
+                        "secondary-dim": "#504f4f",
+                        "on-background": "#2f2e2e",
+                        "on-surface-variant": "#5c5b5b",
+                        "tertiary-fixed": "#def76e",
+                        "surface-bright": "#f9f6f5",
+                        "tertiary": "#536200",
+                        "tertiary-dim": "#485500",
+                        "on-tertiary-fixed-variant": "#586700",
+                        "on-tertiary-container": "#4f5d00",
+                        "primary": "#6d5a00",
+                        "on-primary-fixed": "#433700",
+                        "on-secondary-container": "#525151",
+                        "primary-dim": "#5f4e00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f6f5;
+        }
+        .headline-font {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glass-sheet {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-background min-h-screen flex flex-col">
+<!-- Top Navigation Anchor (Manual Suppression: Back action only) -->
+<header class="fixed top-0 w-full z-50 bg-white/85 backdrop-blur-md shadow-[0_12px_32px_rgba(47,46,46,0.06)] h-16 flex items-center px-6">
+<div class="max-w-screen-xl mx-auto w-full flex justify-between items-center">
+<button class="flex items-center gap-2 text-primary font-semibold hover:bg-stone-100 p-2 rounded-xl transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+<span class="font-headline text-sm uppercase tracking-wider">Back</span>
+</button>
+<div class="text-xl font-black italic text-stone-900 headline-font">
+                Kinetic Concierge
+            </div>
+<div class="w-10"></div> <!-- Spacer for symmetry -->
+</div>
+</header>
+<main class="flex-grow pt-24 pb-12 px-6 flex items-center justify-center relative overflow-hidden">
+<!-- Background Kinetic Element (Decorative) -->
+<div class="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-primary-container/20 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="absolute bottom-[-5%] left-[-5%] w-[400px] h-[400px] bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="w-full max-w-5xl grid md:grid-cols-2 gap-12 items-center">
+<!-- Left Side: Editorial Content -->
+<div class="hidden md:flex flex-col gap-8">
+<div class="space-y-4">
+<span class="inline-block px-4 py-1 bg-primary-container text-on-primary-container rounded-full text-xs font-bold tracking-widest uppercase">Start Your Journey</span>
+<h1 class="text-6xl font-black headline-font leading-[1.1] tracking-tighter text-on-surface">
+                        The Future <br/> of <span class="text-primary italic">Urban Velocity.</span>
+</h1>
+<p class="text-secondary text-lg max-w-md leading-relaxed">
+                        Experience a new standard of mobility. Sophisticated, fast, and seamlessly integrated into your high-velocity lifestyle.
+                    </p>
+</div>
+<!-- Feature Bento-style snippet -->
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-6 rounded-lg space-y-2">
+<span class="material-symbols-outlined text-primary text-3xl">electric_bolt</span>
+<p class="font-bold headline-font text-sm">Instant Booking</p>
+</div>
+<div class="bg-surface-container-highest p-6 rounded-lg space-y-2">
+<span class="material-symbols-outlined text-primary text-3xl">verified_user</span>
+<p class="font-bold headline-font text-sm">Elite Security</p>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+<img class="w-full h-48 object-cover" data-alt="Luxury white sedan driving through a modern glass-and-steel city business district at twilight with long exposure light trails" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALK9_NAuZw4bgKMD3c_91waot0Pqu33nIC2oTBF4Cay0ytif71GJMZGxh6aXkwOqhrJRJrlC2alJIKL1IC2tCQPF3YRQSby-a7lLq3jSnzksbpabzDXwkGNT1wBY7MMT61qg2da4eMBvnj_H7v9Ck-ElH0v1k_Os115FlhAAH-F8CxMNkGKP5sMj6rt5WCrZ4jtZYE16jf31ZAp-E1yugizSwxHyzcSNBGOgy7EVvpzonqeUnoB5W7zUDedxcF48MUBGUQZBGi1lGQ"/>
+</div>
+</div>
+<!-- Right Side: Sign Up Form Card -->
+<div class="glass-sheet p-8 md:p-10 rounded-xl shadow-[0_32px_64px_rgba(0,0,0,0.08)] w-full border border-white/20">
+<div class="mb-8">
+<h2 class="text-3xl font-extrabold headline-font mb-2">Create Account</h2>
+<p class="text-secondary text-sm">Join the concierge network today.</p>
+</div>
+<!-- Account Type Toggle -->
+<div class="bg-surface-container-high p-1.5 rounded-full flex mb-8">
+<button class="flex-1 bg-surface-container-lowest text-on-surface font-bold py-3 rounded-full shadow-sm text-sm transition-all">
+                        Passenger
+                    </button>
+<button class="flex-1 text-secondary font-medium py-3 rounded-full hover:text-on-surface text-sm transition-all">
+                        Driver
+                    </button>
+</div>
+<form class="space-y-5">
+<!-- Name Field -->
+<div class="space-y-1.5">
+<label class="text-[10px] font-bold uppercase tracking-widest text-secondary ml-4">Full Name</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">person</span>
+<input class="w-full bg-surface-container-highest border-none rounded-DEFAULT py-4 pl-12 pr-4 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all text-on-surface" placeholder="Alex Rivera" type="text"/>
+</div>
+</div>
+<!-- Email Field -->
+<div class="space-y-1.5">
+<label class="text-[10px] font-bold uppercase tracking-widest text-secondary ml-4">Email Address</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">mail</span>
+<input class="w-full bg-surface-container-highest border-none rounded-DEFAULT py-4 pl-12 pr-4 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all text-on-surface" placeholder="alex@kinetic.com" type="email"/>
+</div>
+</div>
+<!-- Phone Field -->
+<div class="space-y-1.5">
+<label class="text-[10px] font-bold uppercase tracking-widest text-secondary ml-4">Phone Number</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">smartphone</span>
+<input class="w-full bg-surface-container-highest border-none rounded-DEFAULT py-4 pl-12 pr-4 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all text-on-surface" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+</div>
+<!-- Password Field -->
+<div class="space-y-1.5">
+<label class="text-[10px] font-bold uppercase tracking-widest text-secondary ml-4">Secure Password</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">lock</span>
+<input class="w-full bg-surface-container-highest border-none rounded-DEFAULT py-4 pl-12 pr-4 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all text-on-surface" placeholder="••••••••••••" type="password"/>
+</div>
+</div>
+<!-- Terms Checkbox -->
+<div class="flex items-start gap-3 py-2">
+<div class="mt-1">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary-container cursor-pointer bg-surface-container-highest" id="terms" type="checkbox"/>
+</div>
+<label class="text-xs text-secondary leading-normal" for="terms">
+                            I agree to the <span class="text-on-surface font-semibold underline underline-offset-2">Terms of Service</span> and <span class="text-on-surface font-semibold underline underline-offset-2">Privacy Policy</span>, ensuring a safe experience.
+                        </label>
+</div>
+<!-- CTA Button -->
+<button class="w-full bg-gradient-to-br from-primary to-primary-container py-5 rounded-full text-white font-black headline-font text-lg shadow-[0_8px_20px_rgba(109,90,0,0.25)] hover:shadow-[0_12px_24px_rgba(109,90,0,0.35)] active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+                        Create Account
+                        <span class="material-symbols-outlined">chevron_right</span>
+</button>
+<p class="text-center text-sm text-secondary pt-4">
+                        Already have an account? <a class="text-primary font-bold hover:underline" href="#">Log In</a>
+</p>
+</form>
+</div>
+</div>
+</main>
+<!-- Contextual Footer -->
+<footer class="mt-auto px-6 py-8 border-t border-surface-container">
+<div class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-xs text-secondary font-medium tracking-wide">
+                © 2024 Kinetic Concierge Mobility Systems.
+            </div>
+<div class="flex gap-8">
+<a class="text-[10px] font-bold uppercase tracking-widest text-outline hover:text-primary transition-colors" href="#">Safety</a>
+<a class="text-[10px] font-bold uppercase tracking-widest text-outline hover:text-primary transition-colors" href="#">Cities</a>
+<a class="text-[10px] font-bold uppercase tracking-widest text-outline hover:text-primary transition-colors" href="#">Help</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kinetic Concierge - Trip Summary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#dfdcdc",
+                    "outline-variant": "#afacac",
+                    "primary-container": "#fdd400",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-tertiary-fixed": "#3e4900",
+                    "inverse-surface": "#0e0e0e",
+                    "on-primary": "#fff2ce",
+                    "surface-dim": "#d6d4d3",
+                    "on-secondary-fixed-variant": "#5c5b5b",
+                    "surface-container": "#eae7e7",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#b02500",
+                    "on-primary-container": "#594a00",
+                    "inverse-primary": "#fdd400",
+                    "on-secondary": "#f5f2f1",
+                    "surface-container-high": "#e5e2e1",
+                    "on-error-container": "#520c00",
+                    "on-surface": "#2f2e2e",
+                    "on-tertiary": "#e6fe75",
+                    "error-container": "#f95630",
+                    "outline": "#787676",
+                    "primary-fixed": "#fdd400",
+                    "background": "#f9f6f5",
+                    "tertiary-fixed-dim": "#d0e862",
+                    "surface-container-highest": "#dfdcdc",
+                    "secondary-fixed-dim": "#d6d4d3",
+                    "tertiary-container": "#def76e",
+                    "on-secondary-fixed": "#403f3f",
+                    "on-error": "#ffefec",
+                    "secondary-container": "#e5e2e1",
+                    "error-dim": "#b92902",
+                    "surface": "#f9f6f5",
+                    "primary-fixed-dim": "#edc600",
+                    "surface-tint": "#6d5a00",
+                    "surface-container-low": "#f3f0ef",
+                    "secondary": "#5c5b5b",
+                    "inverse-on-surface": "#9e9c9c",
+                    "on-primary-fixed-variant": "#645300",
+                    "secondary-dim": "#504f4f",
+                    "on-background": "#2f2e2e",
+                    "on-surface-variant": "#5c5b5b",
+                    "tertiary-fixed": "#def76e",
+                    "surface-bright": "#f9f6f5",
+                    "tertiary": "#536200",
+                    "tertiary-dim": "#485500",
+                    "on-tertiary-fixed-variant": "#586700",
+                    "on-tertiary-container": "#4f5d00",
+                    "primary": "#6d5a00",
+                    "on-primary-fixed": "#433700",
+                    "on-secondary-container": "#525151",
+                    "primary-dim": "#5f4e00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="bg-white/85 dark:bg-stone-900/85 backdrop-blur-md fixed top-0 w-full z-50 no-border shadow-sm shadow-[0_12px_32px_rgba(47,46,46,0.06)]">
+<div class="flex justify-between items-center px-6 h-16 w-full max-w-screen-xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="text-yellow-600 dark:text-yellow-400 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors scale-95 active:scale-90 duration-200 p-2 rounded-full">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span class="text-xl font-black italic text-stone-900 dark:text-white font-['Plus_Jakarta_Sans'] tracking-tight">Kinetic Concierge</span>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container">
+<img alt="User profile avatar" data-alt="professional portrait of a person with a friendly expression in clean urban studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATneL8BCMxWq2ghI_qFQyApWrNe3m_MeO7Ju3CN-q9dXh0xw8MIDnaYdKdiEeHWXEQZDthPgL1-FqRJ-tm9EifxjRPK9azlZeMrGVAo-7qrsxQH2HIVvvKYZQyJTK2JU1nukmQVpM_9Fmp_GS-EIxz7rD9totYS6EjwSl8-IQuLqXnOwrmRfo76dBm8XbQpZ0NoEJ3DfDuvSP9gI3HGwuIKaN6zpXqFgGDeUFI2nnyVY7fbuOeLArvokGvFsAcvjEbjVaOueFP90tW"/>
+</div>
+</div>
+</header>
+<main class="pt-24 px-4 max-w-screen-md mx-auto space-y-6">
+<!-- Completion Status & Hero Section -->
+<section class="text-center py-4">
+<div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary to-primary-container rounded-full mb-4 shadow-xl">
+<span class="material-symbols-outlined text-stone-900 text-4xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h1 class="text-4xl font-extrabold tracking-tight text-on-surface mb-2">Trip Completed</h1>
+<p class="text-secondary font-medium uppercase tracking-widest text-[10px]">Thank you for riding with us</p>
+</section>
+<!-- Bento Grid: Summary Cards -->
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<!-- Fare Card -->
+<div class="col-span-2 md:col-span-1 bg-surface-container-lowest p-6 rounded-xl shadow-[0_12px_32px_rgba(47,46,46,0.04)] flex flex-col justify-between">
+<p class="text-secondary text-xs font-bold uppercase tracking-widest mb-4">Total Fare</p>
+<div class="flex items-baseline gap-1">
+<span class="text-primary text-xl font-bold">$</span>
+<span class="text-4xl font-black tracking-tighter text-on-surface">42.50</span>
+</div>
+</div>
+<!-- Distance & Duration -->
+<div class="bg-surface-container-low p-6 rounded-xl flex flex-col justify-between">
+<p class="text-secondary text-xs font-bold uppercase tracking-widest mb-4">Distance</p>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-dim">route</span>
+<span class="text-2xl font-bold text-on-surface">12.4 <span class="text-sm font-medium text-secondary">km</span></span>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl flex flex-col justify-between">
+<p class="text-secondary text-xs font-bold uppercase tracking-widest mb-4">Duration</p>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-dim">schedule</span>
+<span class="text-2xl font-bold text-on-surface">24 <span class="text-sm font-medium text-secondary">min</span></span>
+</div>
+</div>
+</div>
+<!-- Map Snippet (Static Representation) -->
+<div class="w-full h-48 rounded-xl overflow-hidden relative group">
+<img class="w-full h-full object-cover grayscale brightness-75 contrast-125" data-alt="stylized top-down street map of an urban city center with dark tones and yellow highlight lines for route" data-location="San Francisco" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWHP1mUMzwONV_8ujUu9Ch37IoG9tzUjJL2eJej4GnIqjV24cnZi8mEKn8zI6MWZzKstMPDUtXAqFvjrKGItL26f1G-LBCFcygjhcsM6glrAb_VCp4KOzY1cVqWqgcFwvTj_Q4qlthjNojgqWY8Euvj1oqMz5Do3FNzMCJz-olcLtZKrQub_4Gygbn4ONlDq8xwr8qEFsi61lKe57p4qGlWmeuyvkgFipwdziaGV3OAI5dALn_ck63MjgsQgxN8e13SFosQyLo1rwL"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/40 to-transparent"></div>
+<div class="absolute bottom-4 left-6 flex items-center gap-3">
+<div class="p-2 bg-primary rounded-full shadow-lg">
+<span class="material-symbols-outlined text-on-primary-container text-sm">navigation</span>
+</div>
+<span class="text-white text-sm font-bold">Downtown Express Route</span>
+</div>
+</div>
+<!-- Driver Profile & Rating -->
+<section class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_12px_32px_rgba(47,46,46,0.06)] border border-outline-variant/10">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="flex items-center gap-5">
+<div class="relative">
+<img alt="Alex Driver" class="w-20 h-20 rounded-full object-cover border-4 border-primary-container/20" data-alt="headshot of a middle aged man with a warm smile and professional attire, soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxqS6YVVRG29Ufhk-mGAOOnNCnQuGngeU6q17nOYkuhXKulSAbxvzNygtbPHCCgeRF8H6VO7R2lj2de7_UgbBwUrB2mpGKR9jgGTdXs0SMtmRF8rwm1wc-oov3HqnHedlltn5wtyP_hThRYDMcMuiVK49eGpaIcbOWp8szAdXeA6jZwdosKtOxzPRnocva4GoaPD3FkDRCnquZ5GZ5uIWWd6SwsdSeNbq0CRo7qukEl8hvEVYDUibsh--yeYWVT66NNgH8mnwV5txB"/>
+<div class="absolute -bottom-1 -right-1 bg-primary text-on-primary-container text-[10px] font-black px-2 py-1 rounded-full border-2 border-white">GOLD</div>
+</div>
+<div>
+<h2 class="text-2xl font-extrabold text-on-surface">Alex Driver</h2>
+<p class="text-secondary font-medium">Toyota Camry • <span class="text-on-surface font-bold">KNC-2024</span></p>
+<div class="flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-primary-container text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-sm font-bold text-on-surface">4.98</span>
+<span class="text-xs text-outline ml-1">(2,450 rides)</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<p class="text-secondary text-[10px] font-bold uppercase tracking-widest text-center">Rate your experience</p>
+<div class="flex gap-2 justify-center">
+<button class="w-12 h-12 rounded-full flex items-center justify-center hover:bg-primary-container/20 text-outline-variant transition-colors group">
+<span class="material-symbols-outlined group-hover:text-primary" style="font-variation-settings: 'FILL' 0;">star</span>
+</button>
+<button class="w-12 h-12 rounded-full flex items-center justify-center hover:bg-primary-container/20 text-outline-variant transition-colors group">
+<span class="material-symbols-outlined group-hover:text-primary" style="font-variation-settings: 'FILL' 0;">star</span>
+</button>
+<button class="w-12 h-12 rounded-full flex items-center justify-center hover:bg-primary-container/20 text-outline-variant transition-colors group">
+<span class="material-symbols-outlined group-hover:text-primary" style="font-variation-settings: 'FILL' 0;">star</span>
+</button>
+<button class="w-12 h-12 rounded-full flex items-center justify-center hover:bg-primary-container/20 text-outline-variant transition-colors group">
+<span class="material-symbols-outlined group-hover:text-primary" style="font-variation-settings: 'FILL' 0;">star</span>
+</button>
+<button class="w-12 h-12 rounded-full flex items-center justify-center hover:bg-primary-container/20 text-outline-variant transition-colors group">
+<span class="material-symbols-outlined group-hover:text-primary" style="font-variation-settings: 'FILL' 0;">star</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Actions -->
+<div class="flex flex-col gap-3 py-6">
+<button class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-black py-5 rounded-lg shadow-lg active:scale-95 transition-all uppercase tracking-widest text-sm">
+                Add Tip
+            </button>
+<button class="w-full bg-surface-container-high text-on-surface-variant font-bold py-5 rounded-lg active:scale-95 transition-all text-sm">
+                Get Receipt
+            </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-end pb-6 px-4 bg-white/90 dark:bg-stone-900/90 backdrop-blur-xl z-50 rounded-t-[3rem] shadow-[0_-10px_40px_rgba(0,0,0,0.04)] no-border bg-stone-50 dark:bg-stone-800/50">
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-yellow-500 transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-['Inter'] font-medium text-[10px] uppercase tracking-widest">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-yellow-500 to-yellow-300 text-stone-900 rounded-full w-14 h-14 mb-2 shadow-lg translate-y-[-4px] duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_taxi</span>
+<span class="hidden">Activity</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-yellow-500 transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1">account_balance_wallet</span>
+<span class="font-['Inter'] font-medium text-[10px] uppercase tracking-widest">Wallet</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-yellow-500 transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-['Inter'] font-medium text-[10px] uppercase tracking-widest">Profile</span>
+</a>
+</nav>
+</body></html>

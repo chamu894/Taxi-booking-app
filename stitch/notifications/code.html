@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#dfdcdc",
+                    "outline-variant": "#afacac",
+                    "primary-container": "#fdd400",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-tertiary-fixed": "#3e4900",
+                    "inverse-surface": "#0e0e0e",
+                    "on-primary": "#fff2ce",
+                    "surface-dim": "#d6d4d3",
+                    "on-secondary-fixed-variant": "#5c5b5b",
+                    "surface-container": "#eae7e7",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#b02500",
+                    "on-primary-container": "#594a00",
+                    "inverse-primary": "#fdd400",
+                    "on-secondary": "#f5f2f1",
+                    "surface-container-high": "#e5e2e1",
+                    "on-error-container": "#520c00",
+                    "on-surface": "#2f2e2e",
+                    "on-tertiary": "#e6fe75",
+                    "error-container": "#f95630",
+                    "outline": "#787676",
+                    "primary-fixed": "#fdd400",
+                    "background": "#f9f6f5",
+                    "tertiary-fixed-dim": "#d0e862",
+                    "surface-container-highest": "#dfdcdc",
+                    "secondary-fixed-dim": "#d6d4d3",
+                    "tertiary-container": "#def76e",
+                    "on-secondary-fixed": "#403f3f",
+                    "on-error": "#ffefec",
+                    "secondary-container": "#e5e2e1",
+                    "error-dim": "#b92902",
+                    "surface": "#f9f6f5",
+                    "primary-fixed-dim": "#edc600",
+                    "surface-tint": "#6d5a00",
+                    "surface-container-low": "#f3f0ef",
+                    "secondary": "#5c5b5b",
+                    "inverse-on-surface": "#9e9c9c",
+                    "on-primary-fixed-variant": "#645300",
+                    "secondary-dim": "#504f4f",
+                    "on-background": "#2f2e2e",
+                    "on-surface-variant": "#5c5b5b",
+                    "tertiary-fixed": "#def76e",
+                    "surface-bright": "#f9f6f5",
+                    "tertiary": "#536200",
+                    "tertiary-dim": "#485500",
+                    "on-tertiary-fixed-variant": "#586700",
+                    "on-tertiary-container": "#4f5d00",
+                    "primary": "#6d5a00",
+                    "on-primary-fixed": "#433700",
+                    "on-secondary-container": "#525151",
+                    "primary-dim": "#5f4e00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f6f5;
+        }
+        .header-font { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-white/85 dark:bg-stone-900/85 backdrop-blur-md fixed top-0 w-full z-50 shadow-[0_12px_32px_rgba(47,46,46,0.06)]">
+<div class="flex justify-between items-center px-6 h-16 w-full max-w-screen-xl mx-auto">
+<button class="text-yellow-600 p-2 hover:bg-stone-100 transition-colors scale-95 active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-xl font-black italic text-stone-900 font-['Plus_Jakarta_Sans'] tracking-tight uppercase">Kinetic Concierge</h1>
+<div class="h-10 w-10 rounded-full overflow-hidden border-2 border-primary-container shadow-sm">
+<img alt="User" class="w-full h-full object-cover" data-alt="close up professional portrait of a stylish person with warm lighting and a soft neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl-0IqZnHknszgn8aeLKSL18ADddLZvzYsIZgKNqxrHNl_a-5thjXwYoXWac0KRYMytAKn2U1VHxowB1NufEY6koe9JAWvGLEw6NiuHn6i1EWNOBJUQslL98QAG7YklBtnIK9Z-LE9f6BcGzHV0IBTtS2CfUYd-Q3QtX9UV4SsC6FKMMpRncUqMBS-LduyWZaUqb2ZIiQlIKK_g56jbw8alkvZzh0WH3gwSnnofapMgdCQvbJC5Sj0ABsi_PsojWMHxH3-pE-8KGCN"/>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-3xl mx-auto">
+<!-- Editorial Header Section -->
+<div class="mb-10">
+<span class="text-[10px] font-bold tracking-[0.2em] text-primary uppercase mb-2 block">Updates &amp; Alerts</span>
+<h2 class="text-4xl font-extrabold header-font tracking-tight text-on-surface">Notifications</h2>
+</div>
+<!-- Filter Chips -->
+<div class="flex gap-2 mb-8 overflow-x-auto pb-2 no-scrollbar">
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold text-sm shadow-lg shadow-primary/20">All</button>
+<button class="bg-surface-container-low text-on-surface-variant px-6 py-2 rounded-full font-medium text-sm hover:bg-surface-container-high transition-colors">Rides</button>
+<button class="bg-surface-container-low text-on-surface-variant px-6 py-2 rounded-full font-medium text-sm hover:bg-surface-container-high transition-colors">Promos</button>
+<button class="bg-surface-container-low text-on-surface-variant px-6 py-2 rounded-full font-medium text-sm hover:bg-surface-container-high transition-colors">Safety</button>
+</div>
+<!-- Section: Today -->
+<div class="space-y-4 mb-10">
+<div class="flex items-center gap-4 px-2">
+<h3 class="text-xs font-black uppercase tracking-widest text-outline">Today</h3>
+<div class="h-[1px] flex-grow bg-surface-container"></div>
+</div>
+<!-- Bento Card: Ride Update -->
+<div class="bg-surface-container-lowest p-5 rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.04)] group transition-all hover:translate-x-1">
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-primary-container/20 rounded-full flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary" data-icon="local_taxi">local_taxi</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h4 class="font-bold text-on-surface header-font">Your driver is arriving</h4>
+<span class="text-[10px] font-medium text-outline">2m ago</span>
+</div>
+<p class="text-sm text-secondary leading-relaxed">Marcus is 1 block away in a Midnight Black Tesla Model S (P-442-99).</p>
+<div class="mt-4 flex gap-2">
+<button class="bg-primary px-4 py-2 rounded-full text-xs font-bold text-on-primary-container shadow-md">Contact Marcus</button>
+<button class="bg-secondary-container px-4 py-2 rounded-full text-xs font-bold text-on-secondary-container">View Map</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Promotion Card -->
+<div class="bg-surface-container-low p-5 rounded-lg group transition-all hover:translate-x-1 border-l-4 border-primary">
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-surface-container-highest rounded-full flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-surface" data-icon="redeem">redeem</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h4 class="font-bold text-on-surface header-font">Golden Hour Special</h4>
+<span class="text-[10px] font-medium text-outline">1h ago</span>
+</div>
+<p class="text-sm text-secondary leading-relaxed">Unlock 20% off all rides until 6:00 PM today. Use code: SUNSET20.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Yesterday -->
+<div class="space-y-4">
+<div class="flex items-center gap-4 px-2">
+<h3 class="text-xs font-black uppercase tracking-widest text-outline">Yesterday</h3>
+<div class="h-[1px] flex-grow bg-surface-container"></div>
+</div>
+<!-- Transaction Card -->
+<div class="bg-surface-container-lowest p-5 rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.04)] group transition-all hover:translate-x-1">
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="account_balance_wallet">account_balance_wallet</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h4 class="font-bold text-on-surface header-font">Receipt for Sunday Trip</h4>
+<span class="text-[10px] font-medium text-outline">Yesterday</span>
+</div>
+<p class="text-sm text-secondary leading-relaxed">Your ride from 1200 Broadway was completed. Total: $24.50 billed to •••• 4242.</p>
+</div>
+</div>
+</div>
+<!-- Safety Alert -->
+<div class="bg-surface-container-lowest p-5 rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.04)] group transition-all hover:translate-x-1">
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-error-container/10 rounded-full flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-error" data-icon="verified_user">verified_user</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h4 class="font-bold text-on-surface header-font">Safety Feature Updated</h4>
+<span class="text-[10px] font-medium text-outline">Yesterday</span>
+</div>
+<p class="text-sm text-secondary leading-relaxed">Our new 'Quiet Ride' and 'Share Location' tools are now available for your account.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty State Helper (Hidden by default, shown for design context) -->
+<div class="hidden flex flex-col items-center justify-center py-20 text-center opacity-40">
+<span class="material-symbols-outlined text-6xl mb-4" data-icon="notifications_off">notifications_off</span>
+<p class="font-bold header-font">Nothing to see yet</p>
+<p class="text-sm">We'll let you know when things start moving.</p>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-end pb-6 px-4 bg-white/90 dark:bg-stone-900/90 backdrop-blur-xl z-50">
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-yellow-500 transition-all group" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Inter'] font-medium text-[10px] uppercase tracking-widest mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-yellow-500 to-yellow-300 text-stone-900 rounded-full w-14 h-14 mb-2 shadow-lg translate-y-[-4px] duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="local_taxi">local_taxi</span>
+<span class="hidden">Activity</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-yellow-500 transition-all group" href="#">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
+<span class="font-['Inter'] font-medium text-[10px] uppercase tracking-widest mt-1">Wallet</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-yellow-500 transition-all group" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Inter'] font-medium text-[10px] uppercase tracking-widest mt-1">Profile</span>
+</a>
+</nav>
+<!-- Navigation Drawer (Side) - Hidden Placeholder -->
+<aside class="hidden fixed left-0 top-0 h-full w-80 bg-stone-50 dark:bg-stone-950 shadow-2xl z-[60] flex-col py-8 gap-4 px-4 rounded-r-3xl">
+<div class="px-6 py-4">
+<h2 class="text-2xl font-black text-stone-900 dark:text-white font-['Plus_Jakarta_Sans']">Kinetic</h2>
+</div>
+<div class="flex items-center gap-3 px-4 mb-6">
+<div class="w-12 h-12 rounded-xl bg-primary overflow-hidden">
+<img alt="Alex" class="w-full h-full object-cover" data-alt="professional portrait of a man in business casual attire with soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4x1_-uzDlcQMULjl6igoNzrCoALjC_spB5_9SBONwv6hJed8YQ3nCGZid8ibDJC-CbFEPjZFk3r1DC8w8dK9i1hW5mzirRTUAXS8oQjQMhxgdooi5Xci65SdHVNwoy94JLWm7kAaCj80sqlQ9XG3fPp8dyHNlosF8ZQHzx8B4H8RMzhs2JXWh0ls3N0z1bH_TGjDooOiD_jPEwcOLfD5gynR7NyhUB76yeZx-MCEXAeBBRPSQTqwbUuJ3CjjBB1jbf4LsDW7IQ_l5"/>
+</div>
+<div>
+<p class="font-bold header-font text-on-surface">Alex Driver</p>
+<p class="text-xs text-outline">Gold Partner • 4.98 ★</p>
+</div>
+</div>
+<nav class="space-y-2">
+<a class="flex items-center gap-4 px-4 py-3 bg-yellow-400/10 text-yellow-700 font-bold rounded-xl hover:translate-x-2 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span>My Trips</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-stone-600 dark:text-stone-400 hover:bg-stone-200/50 rounded-xl hover:translate-x-2 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="sell">sell</span>
+<span>Promotions</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-stone-600 dark:text-stone-400 hover:bg-stone-200/50 rounded-xl hover:translate-x-2 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span>Settings</span>
+</a>
+</nav>
+</aside>
+</body></html>

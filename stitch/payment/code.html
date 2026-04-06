@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kinetic Concierge - Payment</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#dfdcdc",
+                        "outline-variant": "#afacac",
+                        "primary-container": "#fdd400",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-tertiary-fixed": "#3e4900",
+                        "inverse-surface": "#0e0e0e",
+                        "on-primary": "#fff2ce",
+                        "surface-dim": "#d6d4d3",
+                        "on-secondary-fixed-variant": "#5c5b5b",
+                        "surface-container": "#eae7e7",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#b02500",
+                        "on-primary-container": "#594a00",
+                        "inverse-primary": "#fdd400",
+                        "on-secondary": "#f5f2f1",
+                        "surface-container-high": "#e5e2e1",
+                        "on-error-container": "#520c00",
+                        "on-surface": "#2f2e2e",
+                        "on-tertiary": "#e6fe75",
+                        "error-container": "#f95630",
+                        "outline": "#787676",
+                        "primary-fixed": "#fdd400",
+                        "background": "#f9f6f5",
+                        "tertiary-fixed-dim": "#d0e862",
+                        "surface-container-highest": "#dfdcdc",
+                        "secondary-fixed-dim": "#d6d4d3",
+                        "tertiary-container": "#def76e",
+                        "on-secondary-fixed": "#403f3f",
+                        "on-error": "#ffefec",
+                        "secondary-container": "#e5e2e1",
+                        "error-dim": "#b92902",
+                        "surface": "#f9f6f5",
+                        "primary-fixed-dim": "#edc600",
+                        "surface-tint": "#6d5a00",
+                        "surface-container-low": "#f3f0ef",
+                        "secondary": "#5c5b5b",
+                        "inverse-on-surface": "#9e9c9c",
+                        "on-primary-fixed-variant": "#645300",
+                        "secondary-dim": "#504f4f",
+                        "on-background": "#2f2e2e",
+                        "on-surface-variant": "#5c5b5b",
+                        "tertiary-fixed": "#def76e",
+                        "surface-bright": "#f9f6f5",
+                        "tertiary": "#536200",
+                        "tertiary-dim": "#485500",
+                        "on-tertiary-fixed-variant": "#586700",
+                        "on-tertiary-container": "#4f5d00",
+                        "primary": "#6d5a00",
+                        "on-primary-fixed": "#433700",
+                        "on-secondary-container": "#525151",
+                        "primary-dim": "#5f4e00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .premium-gradient {
+            background: linear-gradient(135deg, #6d5a00 0%, #fdd400 100%);
+        }
+        .glass-sheet {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/85 dark:bg-stone-900/85 backdrop-blur-md shadow-[0_12px_32px_rgba(47,46,46,0.06)]">
+<div class="flex justify-between items-center px-6 h-16 w-full max-w-screen-xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors scale-95 active:scale-90 duration-200">
+<span class="material-symbols-outlined text-stone-900 dark:text-white">arrow_back</span>
+</button>
+<h1 class="text-xl font-black italic text-stone-900 dark:text-white font-['Plus_Jakarta_Sans'] tracking-tight">Kinetic Concierge</h1>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest">
+<img alt="User Profile" class="w-full h-auto" data-alt="Professional headshot of a smiling man with neat hair and modern eyewear in a minimalist office setting with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAVKZni_tmcaTOy2udoKb_ExHEfWlhnSkKdT9GgIE10FG_HLYtXXPna_zDwVh9MrRzuChFK8rzaaKAhWRGfdbixLsG9g2NtcucOZYy_rAILrujNE4gEQe76KYlwYbwKRbMQECVfA1XVuIaIjBhANo3gK6JNnRmCF078ZpGaIOnYAxFxyFfG4Bi4i-CgAGhygjxxgwz7bRYUN-Yg_WhwyhHNrYaOzIYDV7_f7xIXmn6wN0PE98bLKhL-bG2-XUWerkKGgauBHjOef7C"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-lg mx-auto">
+<!-- Summary Card -->
+<div class="mb-8 p-6 rounded-lg bg-surface-container-low relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-9xl">payments</span>
+</div>
+<div class="relative z-10">
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-1">Ride Summary</p>
+<h2 class="font-headline text-3xl font-extrabold text-on-surface">$42.50</h2>
+<div class="mt-4 flex items-center gap-3 text-sm text-secondary">
+<span class="material-symbols-outlined text-primary">local_taxi</span>
+<span class="font-medium">Premium Black • 4.2 Miles</span>
+</div>
+</div>
+</div>
+<!-- Payment Methods Section -->
+<section class="mb-8">
+<h3 class="font-headline text-xl font-bold mb-6 flex items-center gap-2">
+                Payment Method
+            </h3>
+<div class="grid gap-3">
+<!-- Wallet Selection -->
+<button class="w-full flex items-center justify-between p-5 rounded-lg bg-surface-container-lowest shadow-[0_4px_12px_rgba(0,0,0,0.02)] border-2 border-primary ring-4 ring-primary/5 transition-all">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary-container text-on-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
+</div>
+<div class="text-left">
+<p class="font-headline font-bold text-on-surface">Kinetic Wallet</p>
+<p class="text-sm text-on-surface-variant">Balance: $128.40</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</button>
+<!-- Card Selection -->
+<button class="w-full flex items-center justify-between p-5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low transition-all">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 flex items-center justify-center rounded-full bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined">credit_card</span>
+</div>
+<div class="text-left">
+<p class="font-headline font-bold text-on-surface">Visa •••• 8842</p>
+<p class="text-sm text-on-surface-variant">Expires 09/26</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant">radio_button_unchecked</span>
+</button>
+<!-- Cash Selection -->
+<button class="w-full flex items-center justify-between p-5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low transition-all">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 flex items-center justify-center rounded-full bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<div class="text-left">
+<p class="font-headline font-bold text-on-surface">Cash Payment</p>
+<p class="text-sm text-on-surface-variant">Pay driver directly</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant">radio_button_unchecked</span>
+</button>
+</div>
+</section>
+<!-- Promo Code -->
+<section class="mb-10">
+<label class="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-3 px-1">Promotional Offer</label>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-highest border-none rounded-lg h-14 pl-12 pr-28 text-on-surface placeholder:text-outline focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Enter promo code" type="text"/>
+<span class="material-symbols-outlined absolute left-4 text-outline">sell</span>
+<button class="absolute right-2 h-10 px-6 rounded-full bg-secondary text-on-secondary text-sm font-bold hover:brightness-110 active:scale-95 transition-all">
+                    Apply
+                </button>
+</div>
+<div class="mt-3 flex items-center gap-2 text-tertiary px-1">
+<span class="material-symbols-outlined text-sm">auto_awesome</span>
+<p class="text-xs font-medium italic">KINETIC20 applied! $8.50 discount pending.</p>
+</div>
+</section>
+<!-- Final Breakdown -->
+<div class="space-y-3 mb-10 px-2">
+<div class="flex justify-between items-center text-sm">
+<span class="text-secondary">Subtotal</span>
+<span class="font-medium text-on-surface">$42.50</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-secondary">Promo (KINETIC20)</span>
+<span class="font-medium text-tertiary">-$8.50</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-secondary">Service Fee</span>
+<span class="font-medium text-on-surface">$1.20</span>
+</div>
+<div class="pt-4 mt-2 flex justify-between items-center border-t border-surface-container-highest">
+<span class="font-headline font-bold text-lg">Total Charge</span>
+<span class="font-headline font-black text-2xl text-on-surface">$35.20</span>
+</div>
+</div>
+<!-- Order Button -->
+<button class="w-full h-16 rounded-full premium-gradient text-stone-900 font-headline font-extrabold text-lg shadow-[0_12px_32px_rgba(109,90,0,0.2)] active:scale-[0.98] transition-all flex items-center justify-center gap-3">
+            Confirm Payment
+            <span class="material-symbols-outlined">bolt</span>
+</button>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50">
+<div class="bg-white/90 dark:bg-stone-900/90 backdrop-blur-xl shadow-[0_-10px_40px_rgba(0,0,0,0.04)] rounded-t-[3rem] pb-6 px-4 flex justify-around items-end">
+<a class="flex flex-col items-center justify-center text-stone-400 hover:text-yellow-500 transition-all p-4" href="#">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-['Inter'] font-medium text-[10px] uppercase tracking-widest">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 hover:text-yellow-500 transition-all p-4" href="#">
+<span class="material-symbols-outlined mb-1">local_taxi</span>
+<span class="font-['Inter'] font-medium text-[10px] uppercase tracking-widest">Activity</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-yellow-500 to-yellow-300 text-stone-900 rounded-full w-14 h-14 mb-2 shadow-lg translate-y-[-4px]" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 hover:text-yellow-500 transition-all p-4" href="#">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-['Inter'] font-medium text-[10px] uppercase tracking-widest">Profile</span>
+</a>
+</div>
+</nav>
+<!-- Decorative Canvas Elements -->
+<div class="fixed top-20 -right-20 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl -z-10"></div>
+<div class="fixed bottom-40 -left-20 w-48 h-48 bg-secondary-container/20 rounded-full blur-3xl -z-10"></div>
+</body></html>
