@@ -2,4 +2,34 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Kinetic Palette -->
+    <color name="primary">#6d5a00</color>
+    <color name="on_primary">#fff2ce</color>
+    <color name="primary_container">#fdd400</color>
+    <color name="on_primary_container">#594a00</color>
+
+    <color name="secondary">#5c5b5b</color>
+    <color name="on_secondary">#f5f2f1</color>
+    <color name="secondary_container">#e5e2e1</color>
+    <color name="on_secondary_container">#525151</color>
+
+    <color name="background">#f9f6f5</color>
+    <color name="on_background">#2f2e2e</color>
+
+    <color name="surface">#f9f6f5</color>
+    <color name="on_surface">#2f2e2e</color>
+    <color name="inverse_surface">#0e0e0e</color>
+    <color name="on_surface_variant">#5c5b5b</color>
+
+    <color name="outline">#787676</color>
+    <color name="outline_variant">#afacac</color>
+
+    <color name="surface_container">#eae7e7</color>
+    <color name="surface_container_low">#f3f0ef</color>
+    <color name="surface_container_high">#e5e2e1</color>
+    <color name="surface_container_highest">#dfdcdc</color>
+
+    <color name="error">#b02500</color>
+    <color name="on_error">#ffefec</color>
 </resources>
