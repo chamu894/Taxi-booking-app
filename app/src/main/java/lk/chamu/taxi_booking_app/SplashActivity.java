@@ -27,9 +27,9 @@ public class SplashActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Delay for splash screen then navigate to Login
+        // Delay for splash screen then navigate to Onboarding
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+            Intent intent = new Intent(SplashActivity.this, OnboardingActivity.class);
             startActivity(intent);
             finish();
         }, SPLASH_DURATION);

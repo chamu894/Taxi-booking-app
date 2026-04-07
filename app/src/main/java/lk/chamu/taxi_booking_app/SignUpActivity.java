@@ -29,12 +29,7 @@ public class SignUpActivity extends AppCompatActivity {
         });
 
         ImageButton btnBack = findViewById(R.id.btnBack);
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        btnBack.setOnClickListener(v -> finish());
 
         TextView loginLink = findViewById(R.id.loginLink);
         loginLink.setOnClickListener(new View.OnClickListener() {
