@@ -29,10 +29,11 @@ public class RideBookingActivity extends AppCompatActivity {
         ImageButton btnBack = findViewById(R.id.btnBack);
         btnBack.setOnClickListener(v -> finish());
 
-        MaterialButton btnConfirmRide = findViewById(R.id.btnConfirmRide);
-        btnConfirmRide.setOnClickListener(v -> {
-            // Logic for confirming ride
-            finish();
+        // No back button in the current layout, but let's handle the confirm button
+        findViewById(R.id.btnConfirm).setOnClickListener(v -> {
+            // Navigate to RideInProgressActivity
+            Intent intent = new Intent(RideBookingActivity.this, RideInProgressActivity.class);
+            startActivity(intent);
         });
     }
 }
