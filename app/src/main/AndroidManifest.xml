@@ -12,14 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Taxibookingapp">
         <activity
-            android:name=".SplashActivity"
-            android:exported="true"
-            android:theme="@style/Theme.Taxibookingapp">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".RideBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RideInProgressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RideCompletedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OnboardingActivity"
+            android:exported="false" />
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
@@ -30,8 +33,14 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".RideBookingActivity"
-            android:exported="false" />
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Taxibookingapp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
