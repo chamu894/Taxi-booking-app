@@ -27,14 +27,17 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         MaterialButton btnSignIn = findViewById(R.id.btnSignIn);
-        btnSignIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Navigate to MainActivity
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        btnSignIn.setOnClickListener(v -> {
+            // Navigate to MainActivity
+            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        });
+
+        findViewById(R.id.btnSignUp).setOnClickListener(v -> {
+            // Navigate to SignUpActivity
+            Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+            startActivity(intent);
         });
     }
 }
