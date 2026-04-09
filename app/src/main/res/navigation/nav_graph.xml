@@ -23,7 +23,27 @@
         android:label="OnboardingFragment"
         tools:layout="@layout/fragment_onboarding">
         <action
-            android:id="@+id/action_onboardingFragment_to_loginFragment"
+            android:id="@+id/action_onboardingFragment_to_onboarding2Fragment"
+            app:destination="@id/onboarding2Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboarding2Fragment"
+        android:name="lk.chamu.stitch.ui.fragments.Onboarding2Fragment"
+        android:label="Onboarding2Fragment"
+        tools:layout="@layout/fragment_onboarding_2">
+        <action
+            android:id="@+id/action_onboarding2Fragment_to_onboarding3Fragment"
+            app:destination="@id/onboarding3Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboarding3Fragment"
+        android:name="lk.chamu.stitch.ui.fragments.Onboarding3Fragment"
+        android:label="Onboarding3Fragment"
+        tools:layout="@layout/fragment_onboarding_3">
+        <action
+            android:id="@+id/action_onboarding3Fragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
 
@@ -38,6 +58,9 @@
         <action
             android:id="@+id/action_loginFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
     </fragment>
 
     <fragment
@@ -47,8 +70,111 @@
         tools:layout="@layout/fragment_signup" />
 
     <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="lk.chamu.stitch.ui.fragments.ForgotPasswordFragment"
+        android:label="ForgotPasswordFragment"
+        tools:layout="@layout/fragment_forgot_password" />
+
+    <fragment
         android:id="@+id/homeFragment"
         android:name="lk.chamu.stitch.ui.fragments.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="lk.chamu.stitch.ui.fragments.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="lk.chamu.stitch.ui.fragments.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="lk.chamu.stitch.ui.fragments.NotificationsFragment"
+        android:label="NotificationsFragment"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/promotionsFragment"
+        android:name="lk.chamu.stitch.ui.fragments.PromotionsFragment"
+        android:label="PromotionsFragment"
+        tools:layout="@layout/fragment_promotions" />
+
+    <fragment
+        android:id="@+id/supportFragment"
+        android:name="lk.chamu.stitch.ui.fragments.SupportFragment"
+        android:label="SupportFragment"
+        tools:layout="@layout/fragment_support" />
+
+    <fragment
+        android:id="@+id/rideBookingFragment"
+        android:name="lk.chamu.stitch.ui.fragments.RideBookingFragment"
+        android:label="RideBookingFragment"
+        tools:layout="@layout/fragment_ride_booking" />
+
+    <fragment
+        android:id="@+id/driverNearbyFragment"
+        android:name="lk.chamu.stitch.ui.fragments.DriverNearbyFragment"
+        android:label="DriverNearbyFragment"
+        tools:layout="@layout/fragment_driver_nearby" />
+
+    <fragment
+        android:id="@+id/confirmationFragment"
+        android:name="lk.chamu.stitch.ui.fragments.ConfirmationFragment"
+        android:label="ConfirmationFragment"
+        tools:layout="@layout/fragment_confirmation" />
+
+    <fragment
+        android:id="@+id/rideInProgressFragment"
+        android:name="lk.chamu.stitch.ui.fragments.RideInProgressFragment"
+        android:label="RideInProgressFragment"
+        tools:layout="@layout/fragment_ride_in_progress" />
+
+    <fragment
+        android:id="@+id/rideCompletedFragment"
+        android:name="lk.chamu.stitch.ui.fragments.RideCompletedFragment"
+        android:label="RideCompletedFragment"
+        tools:layout="@layout/fragment_ride_completed" />
+
+    <fragment
+        android:id="@+id/ratingsFragment"
+        android:name="lk.chamu.stitch.ui.fragments.RatingsFragment"
+        android:label="RatingsFragment"
+        tools:layout="@layout/fragment_ratings" />
+
+    <fragment
+        android:id="@+id/driverDashboardFragment"
+        android:name="lk.chamu.stitch.ui.fragments.DriverDashboardFragment"
+        android:label="DriverDashboardFragment"
+        tools:layout="@layout/fragment_driver_dashboard" />
+
+    <fragment
+        android:id="@+id/driverRideDetailsFragment"
+        android:name="lk.chamu.stitch.ui.fragments.DriverRideDetailsFragment"
+        android:label="DriverRideDetailsFragment"
+        tools:layout="@layout/fragment_driver_ride_details" />
+
+    <fragment
+        android:id="@+id/walletFragment"
+        android:name="lk.chamu.stitch.ui.fragments.WalletFragment"
+        android:label="WalletFragment"
+        tools:layout="@layout/fragment_wallet" />
+
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="lk.chamu.stitch.ui.fragments.PaymentFragment"
+        android:label="PaymentFragment"
+        tools:layout="@layout/fragment_payment" />
+
+    <fragment
+        android:id="@+id/rideHistoryFragment"
+        android:name="lk.chamu.stitch.ui.fragments.RideHistoryFragment"
+        android:label="RideHistoryFragment"
+        tools:layout="@layout/fragment_ride_history" />
+
 </navigation>
