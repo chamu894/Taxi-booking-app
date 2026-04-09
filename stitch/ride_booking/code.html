@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-variant": "#dfdcdc",
+                      "outline-variant": "#afacac",
+                      "primary-container": "#fdd400",
+                      "secondary-fixed": "#e5e2e1",
+                      "on-tertiary-fixed": "#3e4900",
+                      "inverse-surface": "#0e0e0e",
+                      "on-primary": "#fff2ce",
+                      "surface-dim": "#d6d4d3",
+                      "on-secondary-fixed-variant": "#5c5b5b",
+                      "surface-container": "#eae7e7",
+                      "surface-container-lowest": "#ffffff",
+                      "error": "#b02500",
+                      "on-primary-container": "#594a00",
+                      "inverse-primary": "#fdd400",
+                      "on-secondary": "#f5f2f1",
+                      "surface-container-high": "#e5e2e1",
+                      "on-error-container": "#520c00",
+                      "on-surface": "#2f2e2e",
+                      "on-tertiary": "#e6fe75",
+                      "error-container": "#f95630",
+                      "outline": "#787676",
+                      "primary-fixed": "#fdd400",
+                      "background": "#f9f6f5",
+                      "tertiary-fixed-dim": "#d0e862",
+                      "surface-container-highest": "#dfdcdc",
+                      "secondary-fixed-dim": "#d6d4d3",
+                      "tertiary-container": "#def76e",
+                      "on-secondary-fixed": "#403f3f",
+                      "on-error": "#ffefec",
+                      "secondary-container": "#e5e2e1",
+                      "error-dim": "#b92902",
+                      "surface": "#f9f6f5",
+                      "primary-fixed-dim": "#edc600",
+                      "surface-tint": "#6d5a00",
+                      "surface-container-low": "#f3f0ef",
+                      "secondary": "#5c5b5b",
+                      "inverse-on-surface": "#9e9c9c",
+                      "on-primary-fixed-variant": "#645300",
+                      "secondary-dim": "#504f4f",
+                      "on-background": "#2f2e2e",
+                      "on-surface-variant": "#5c5b5b",
+                      "tertiary-fixed": "#def76e",
+                      "surface-bright": "#f9f6f5",
+                      "tertiary": "#536200",
+                      "tertiary-dim": "#485500",
+                      "on-tertiary-fixed-variant": "#586700",
+                      "on-tertiary-container": "#4f5d00",
+                      "primary": "#6d5a00",
+                      "on-primary-fixed": "#433700",
+                      "on-secondary-container": "#525151",
+                      "primary-dim": "#5f4e00"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body": [
+                              "Inter"
+                      ],
+                      "label": [
+                              "Inter"
+                      ]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body antialiased">
+<!-- TopAppBar -->
+<header class="bg-white/85 dark:bg-stone-900/85 backdrop-blur-md fixed top-0 w-full z-50 shadow-[0_12px_32px_rgba(47,46,46,0.06)]">
+<div class="flex justify-between items-center px-6 h-16 w-full max-w-screen-xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors scale-95 active:scale-90 duration-200 p-2 rounded-full">
+<span class="material-symbols-outlined text-yellow-600 dark:text-yellow-400" data-icon="menu">menu</span>
+</button>
+<h1 class="text-xl font-black italic text-stone-900 dark:text-white font-['Plus_Jakarta_Sans'] tracking-tight">Kinetic Concierge</h1>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container">
+<img alt="User profile avatar" class="w-full h-full object-cover" data-alt="Close up portrait of a modern urban traveler with a stylish background, soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVGGH5chQdf0Gkgijxj2KIjHtMOzuqqLu_JTduKKLeRFdya_4nUa2JfcHz2WEdziTUwPNbmkpk7kEkKh3JW7HrABJCUAPh94QSTSLOHHVkDV_LD8sewCIKToIw3NysYikdX_tohV9u2AX2IyjdqY-7Sod3r4lXoO0Q4gWlh6S8b6PXN2WB7IhhuqlxaWY7FlPlvs7qG6dFRrWzaSuvG7AMTnGoEnifXZ8MRC_HUVzIsgM15kvqJ0s9yaV4QLOjw0yXK95YTYlF3H3R"/>
+</div>
+</div>
+</header>
+<main class="min-h-screen pt-16 pb-32">
+<!-- Map Canvas (Full background behind content) -->
+<div class="fixed inset-0 z-0">
+<img class="w-full h-full object-cover grayscale opacity-50 contrast-125" data-alt="Clean minimalist vector style city map with soft grey streets and a highlighted yellow route between two points" data-location="New York City" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOTfExwiokdPVI_Z2GcSjmFAbnYc-fZHjJHpyuELP8A6pga1T_k_qU40q_8FAWhOd7jkErnFNwBGS_gLHGuE3IwDh6s-iiKN9NNhTZ6zbUSDse1w4KUyiUoBAKR2h2XyDam3ubYNfaNSeDylyO6G59VG9GG5CxT--uUZ-qZO7YOZbUKlOZUez8VvicFSW6QPm0AhOZ0oDuvTSLE3OqRg1Rnp_u5ei4BPNvxCIPo1pP6uBmAo70vbNHoyqGbr3LxT_XISyEXGRvbpmW"/>
+<!-- Route Markers Overlay -->
+<div class="absolute inset-0 pointer-events-none flex flex-col justify-center items-center">
+<!-- Visual representation of Pickup/Dropoff on map -->
+<div class="relative w-full h-full">
+<div class="absolute top-[30%] left-[40%] flex flex-col items-center">
+<div class="bg-primary text-on-primary p-2 rounded-full shadow-lg border-2 border-white">
+<span class="material-symbols-outlined text-sm" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div class="mt-1 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full shadow-sm text-[10px] font-bold uppercase tracking-tighter">Pickup</div>
+</div>
+<div class="absolute bottom-[40%] right-[35%] flex flex-col items-center">
+<div class="bg-inverse-surface text-white p-2 rounded-full shadow-lg border-2 border-white">
+<span class="material-symbols-outlined text-sm" data-icon="flag" style="font-variation-settings: 'FILL' 1;">flag</span>
+</div>
+<div class="mt-1 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full shadow-sm text-[10px] font-bold uppercase tracking-tighter">Destination</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Trip Details Sheet -->
+<div class="relative z-10 mt-20 px-6 max-w-lg mx-auto flex flex-col gap-6">
+<!-- Address Card -->
+<div class="bg-white/85 backdrop-blur-xl rounded-xl p-6 shadow-[0_12px_32px_rgba(47,46,46,0.06)] border border-white/20">
+<div class="space-y-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="radio_button_checked">radio_button_checked</span>
+<div class="flex-1">
+<p class="text-[10px] uppercase tracking-widest text-secondary font-bold">Pickup Point</p>
+<p class="font-headline font-bold text-on-surface">Grand Central Terminal</p>
+</div>
+</div>
+<div class="ml-3 h-6 border-l-2 border-dotted border-outline-variant"></div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-inverse-surface mt-1" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<div class="flex-1">
+<p class="text-[10px] uppercase tracking-widest text-secondary font-bold">Drop-off Point</p>
+<p class="font-headline font-bold text-on-surface">The High Line, 10th Ave</p>
+</div>
+<button class="text-primary hover:bg-primary/10 p-2 rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="edit">edit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Vehicle Selection Area -->
+<div class="bg-surface-container-lowest/90 backdrop-blur-2xl rounded-xl p-2 shadow-2xl overflow-hidden">
+<div class="p-4 border-b border-surface-container-highest/30">
+<h2 class="font-headline text-lg font-extrabold tracking-tight">Select Ride Type</h2>
+</div>
+<div class="max-h-[320px] overflow-y-auto hide-scrollbar p-2 space-y-2">
+<!-- Economy -->
+<div class="group relative flex items-center gap-4 p-4 rounded-lg bg-surface-container-low hover:bg-primary-container transition-all cursor-pointer">
+<div class="w-16 h-16 bg-white rounded-lg flex items-center justify-center shadow-sm overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Front view of a sleek modern white sedan car in a studio setting with soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnV5hAQWhb1uxPxcWNLMHIFTpLYZWPiDtLi-UhVSHEo0h8JUW2p2TxrFtFh93TSjvMZztB9GCkbPFdS3Dxh5Utxrbxudk0WT-rEVgSHj3BsLNrQMTORzYw1U3Z6AsEz_dfSpB4pfarZAKXnm7v-ft7ISIs65MB_uRIDdBINZAO5ctZhT9be5__4RcUgUb-tYyfiF362ch6flJ2uBdJ7OVjpkpGM0Csf7Yh0wDQOxAt6vYLJzXNu6hnjorBUvFFb9kRmPvLkbabZWWF"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<h3 class="font-headline font-extrabold text-on-surface">Economy</h3>
+<p class="font-headline font-black text-lg">$14.50</p>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-[16px] text-secondary" data-icon="schedule">schedule</span>
+<p class="text-xs font-medium text-secondary">3 mins away • 18:45 ETA</p>
+</div>
+</div>
+<div class="absolute right-4 bottom-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<!-- Premium -->
+<div class="group relative flex items-center gap-4 p-4 rounded-lg bg-primary-container shadow-lg border border-primary/20 scale-[1.02]">
+<div class="w-16 h-16 bg-white rounded-lg flex items-center justify-center shadow-sm overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Side profile of a premium black luxury sedan car with gleaming finish under urban streetlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZB9Zhac_uXHQuafgs84G_zgSnmZ8PpCO3uUPQusNxO86HGl7lRUxrJmWEi2vz6K6OshwOvZRHeObaAro3oJjKfTjXqKXJVpiMU-dobcDUVN7tDnFC8wm0iqA2mdAEiD2ufzHm0a0_KdIwU-gwHudLpmNy9HFNr4DqnTWYS9lK_hpwpDxnMaytu7Zo_mLJZPlzXdHLuls3lh9fR8-rxEeXKRNQ3i2gb0WFhgjUjhIKyqX5DRfkJTUUne0AwcaDmF3eqFtlVEyiz2Bm"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-2">
+<h3 class="font-headline font-extrabold text-on-surface">Premium</h3>
+<span class="bg-on-surface text-white text-[8px] px-2 py-0.5 rounded-full uppercase tracking-widest font-bold">Recommended</span>
+</div>
+<p class="font-headline font-black text-lg">$22.00</p>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-[16px] text-on-surface" data-icon="schedule">schedule</span>
+<p class="text-xs font-medium text-on-surface">1 min away • 18:42 ETA</p>
+</div>
+</div>
+<div class="absolute right-4 bottom-4">
+<span class="material-symbols-outlined text-on-surface" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<!-- XL -->
+<div class="group relative flex items-center gap-4 p-4 rounded-lg bg-surface-container-low hover:bg-primary-container transition-all cursor-pointer">
+<div class="w-16 h-16 bg-white rounded-lg flex items-center justify-center shadow-sm overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Spacious dark SUV vehicle parked in a modern architectural setting with high-end vibes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRkhktKoJbcppumvRwpcvMsdsNeZqmed43TlPb73TOO4LI-X1B0gJ3pjYBqd4r8QG7efJ4i_bRfalJWrfWjKQDZ_3pVNIYZVCxxwsJSK7ubY4oOohwaQbSF9BGy4xLV7GmyBdWLZyAWr9n1AyuYqP7h9tvrcL_KsNJhnNgCdLptEe1GqHuSe7dO_nUDZO08Ssn4lAfmsFAD9wa7UelhFoXlAPY2CsiklQHsTjR2xlU8WP_EGtdcOd4JWCX3durq3bwu-4vm2Aii6_M"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<h3 class="font-headline font-extrabold text-on-surface">XL Van</h3>
+<p class="font-headline font-black text-lg">$31.25</p>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-[16px] text-secondary" data-icon="group">group</span>
+<p class="text-xs font-medium text-secondary">Up to 6 seats • 5 mins away</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Payment Summary -->
+<div class="p-4 bg-surface-container-high/50 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<div class="bg-white p-2 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-blue-600" data-icon="credit_card">credit_card</span>
+</div>
+<div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-secondary">Paying with</p>
+<p class="text-sm font-bold">•••• 4242</p>
+</div>
+</div>
+<button class="text-primary text-xs font-bold uppercase tracking-widest hover:underline">Change</button>
+</div>
+</div>
+<!-- Confirm Button Container -->
+<div class="fixed bottom-24 left-0 w-full px-6 flex justify-center z-50">
+<button class="w-full max-w-md bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-headline font-black text-lg py-5 rounded-full shadow-[0_12px_40px_rgba(109,90,0,0.3)] hover:scale-[1.02] active:scale-95 transition-all uppercase tracking-tighter flex items-center justify-center gap-3">
+                    Confirm Premium Ride
+                    <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-end pb-6 px-4 bg-white/90 dark:bg-stone-900/90 backdrop-blur-xl z-50 shadow-[0_-10px_40px_rgba(0,0,0,0.04)]">
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-yellow-500 to-yellow-300 text-stone-900 rounded-full w-14 h-14 mb-2 shadow-lg translate-y-[-4px] duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Inter'] font-medium text-[10px] uppercase tracking-widest">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-yellow-500 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="local_taxi">local_taxi</span>
+<span class="font-['Inter'] font-medium text-[10px] uppercase tracking-widest">Activity</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-yellow-500 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
+<span class="font-['Inter'] font-medium text-[10px] uppercase tracking-widest">Wallet</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-yellow-500 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Inter'] font-medium text-[10px] uppercase tracking-widest">Profile</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#dfdcdc",
+                    "outline-variant": "#afacac",
+                    "primary-container": "#fdd400",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-tertiary-fixed": "#3e4900",
+                    "inverse-surface": "#0e0e0e",
+                    "on-primary": "#fff2ce",
+                    "surface-dim": "#d6d4d3",
+                    "on-secondary-fixed-variant": "#5c5b5b",
+                    "surface-container": "#eae7e7",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#b02500",
+                    "on-primary-container": "#594a00",
+                    "inverse-primary": "#fdd400",
+                    "on-secondary": "#f5f2f1",
+                    "surface-container-high": "#e5e2e1",
+                    "on-error-container": "#520c00",
+                    "on-surface": "#2f2e2e",
+                    "on-tertiary": "#e6fe75",
+                    "error-container": "#f95630",
+                    "outline": "#787676",
+                    "primary-fixed": "#fdd400",
+                    "background": "#f9f6f5",
+                    "tertiary-fixed-dim": "#d0e862",
+                    "surface-container-highest": "#dfdcdc",
+                    "secondary-fixed-dim": "#d6d4d3",
+                    "tertiary-container": "#def76e",
+                    "on-secondary-fixed": "#403f3f",
+                    "on-error": "#ffefec",
+                    "secondary-container": "#e5e2e1",
+                    "error-dim": "#b92902",
+                    "surface": "#f9f6f5",
+                    "primary-fixed-dim": "#edc600",
+                    "surface-tint": "#6d5a00",
+                    "surface-container-low": "#f3f0ef",
+                    "secondary": "#5c5b5b",
+                    "inverse-on-surface": "#9e9c9c",
+                    "on-primary-fixed-variant": "#645300",
+                    "secondary-dim": "#504f4f",
+                    "on-background": "#2f2e2e",
+                    "on-surface-variant": "#5c5b5b",
+                    "tertiary-fixed": "#def76e",
+                    "surface-bright": "#f9f6f5",
+                    "tertiary": "#536200",
+                    "tertiary-dim": "#485500",
+                    "on-tertiary-fixed-variant": "#586700",
+                    "on-tertiary-container": "#4f5d00",
+                    "primary": "#6d5a00",
+                    "on-primary-fixed": "#433700",
+                    "on-secondary-container": "#525151",
+                    "primary-dim": "#5f4e00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f6f5;
+            color: #2f2e2e;
+        }
+        h1, h2, h3 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-white/85 dark:bg-stone-900/85 backdrop-blur-md fixed top-0 w-full z-50 shadow-[0_12px_32px_rgba(47,46,46,0.06)]">
+<div class="flex justify-between items-center px-6 h-16 w-full max-w-screen-xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors scale-95 active:scale-90 duration-200">
+<span class="material-symbols-outlined text-stone-900 dark:text-white" data-icon="menu">menu</span>
+</button>
+<span class="text-xl font-black italic text-stone-900 dark:text-white font-['Plus_Jakarta_Sans'] tracking-tight">Kinetic Concierge</span>
+</div>
+<div class="h-10 w-10 rounded-full overflow-hidden border-2 border-primary-container shadow-sm">
+<img alt="User Profile" class="h-full w-full object-cover" data-alt="Close-up portrait of a professional man with a friendly smile, clean urban backdrop, soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo3_lhdk-uyb4GhW3lKRAVVHQJhDlBKblAFuN3U-JCnAp6qmqZC8RGfiUw0BfJ7bfn5WxUzO_am-bzhSaP4bXeaxN3q4MM964Gw1WjZvJadsU-FjU9rmkVARGperbosB9umfJ2npuPlfiMnJ0zAq9qSLOBo9cDPO7vD9oaOR8hu0UF0IZsoIAEsi-y-IQBpfMAfZkWb8y6gwpbU2mQpzidjE77aTqWV_205Pdj3iix2YPpGKqXK-1QGT3GlcoHALb4tmimofRLn98Y"/>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-screen-xl mx-auto">
+<!-- Profile Hero Section (Editorial Style) -->
+<section class="relative mb-12">
+<div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+<div class="relative group">
+<div class="w-32 h-32 md:w-48 md:h-48 rounded-xl overflow-hidden shadow-2xl transition-transform duration-300 group-hover:scale-[1.02]">
+<img alt="Alex Driver" class="w-full h-full object-cover" data-alt="Professional headshot of a smiling man in his early 30s, natural sunlight, warm skin tones, architectural background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0_TUMMMxDqPxRFgBN6HoYK6DYdZbXZ7LnWqzUMktVxgIeQQaBBBcZqbRvlYcI6MS47fWxx-yHlj5OskF6eSlB5RHdOYsN1qGObY3AOJaaYcnyHchuBRwTsnDILzhBFLJPkvV7W3ehOTgy0mDgclmbrbu6urpyz7NvyY6wzjYLvWuFGMmjeqb-eym2SGmDaeLIu8M5M48U2xvWkJ4mCgWpWZj35g7ZALAGlbgvz-Qs57WoSNNqlDrLjma9sxNIrO0JXtC6Q_-2Dri3"/>
+</div>
+<div class="absolute -bottom-4 -right-4 bg-primary-container text-on-primary-container px-4 py-2 rounded-full font-bold shadow-lg flex items-center gap-1 scale-95 md:scale-100">
+<span class="material-symbols-outlined text-lg" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-sm font-['Plus_Jakarta_Sans']">4.98</span>
+</div>
+</div>
+<div class="flex-1 text-center md:text-left mt-4 md:mt-0">
+<span class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-2 block">Gold Partner</span>
+<h1 class="text-4xl md:text-6xl font-extrabold text-on-surface tracking-tighter mb-2">Alex Driver</h1>
+<p class="text-lg text-secondary font-medium mb-6">alex.driver@kinetic-concierge.com</p>
+<div class="flex flex-wrap justify-center md:justify-start gap-3">
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-3 rounded-full font-bold shadow-md hover:translate-y-[-2px] transition-all active:scale-95">
+                            Edit Info
+                        </button>
+<button class="bg-secondary-container text-on-secondary-container px-8 py-3 rounded-full font-bold hover:bg-surface-container-highest transition-colors active:scale-95">
+                            Switch Mode
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Quick Links -->
+<section class="grid grid-cols-1 md:grid-cols-4 gap-4 md:h-64 mb-12">
+<!-- Payment (Large Feature) -->
+<div class="md:col-span-2 bg-white rounded-lg p-8 flex flex-col justify-between shadow-[0_12px_32px_rgba(47,46,46,0.04)] hover:shadow-lg transition-shadow group">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="account_balance_wallet">account_balance_wallet</span>
+<span class="text-xs font-bold px-3 py-1 bg-surface-container-low rounded-full">ACTIVE</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-1">Payment</h3>
+<p class="text-sm text-secondary">Manage methods &amp; viewing history</p>
+</div>
+<div class="mt-4 flex items-center gap-2 text-primary font-bold text-sm">
+                    View Wallet <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Settings (Asymmetric Small) -->
+<div class="bg-surface-container-low rounded-lg p-6 flex flex-col justify-center items-center text-center hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-3xl mb-3 text-secondary" data-icon="settings">settings</span>
+<h3 class="font-bold">Settings</h3>
+<p class="text-xs text-secondary mt-1">App preferences</p>
+</div>
+<!-- Support (Asymmetric Small) -->
+<div class="bg-surface-container-low rounded-lg p-6 flex flex-col justify-center items-center text-center hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-3xl mb-3 text-secondary" data-icon="help">help</span>
+<h3 class="font-bold">Support</h3>
+<p class="text-xs text-secondary mt-1">24/7 Assistance</p>
+</div>
+</section>
+<!-- Stats & Activity (Horizontal Flow) -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-white rounded-lg p-6 flex items-center gap-4 shadow-sm">
+<div class="bg-primary/10 p-3 rounded-full">
+<span class="material-symbols-outlined text-primary" data-icon="history">history</span>
+</div>
+<div>
+<p class="text-xs text-secondary font-bold uppercase tracking-widest">Trips Completed</p>
+<p class="text-2xl font-black">1,284</p>
+</div>
+</div>
+<div class="bg-white rounded-lg p-6 flex items-center gap-4 shadow-sm">
+<div class="bg-primary/10 p-3 rounded-full">
+<span class="material-symbols-outlined text-primary" data-icon="payments">payments</span>
+</div>
+<div>
+<p class="text-xs text-secondary font-bold uppercase tracking-widest">Total Earnings</p>
+<p class="text-2xl font-black">$42,150</p>
+</div>
+</div>
+<div class="bg-white rounded-lg p-6 flex items-center gap-4 shadow-sm">
+<div class="bg-primary/10 p-3 rounded-full">
+<span class="material-symbols-outlined text-primary" data-icon="sell">sell</span>
+</div>
+<div>
+<p class="text-xs text-secondary font-bold uppercase tracking-widest">Promotions</p>
+<p class="text-2xl font-black">12 Available</p>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-end pb-6 px-4 bg-white/90 dark:bg-stone-900/90 backdrop-blur-xl z-50">
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-yellow-500 transition-all translate-y-[-4px] duration-300 ease-out cursor-pointer">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Inter'] font-medium text-[10px] uppercase tracking-widest mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-yellow-500 transition-all translate-y-[-4px] duration-300 ease-out cursor-pointer">
+<span class="material-symbols-outlined" data-icon="local_taxi">local_taxi</span>
+<span class="font-['Inter'] font-medium text-[10px] uppercase tracking-widest mt-1">Activity</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-yellow-500 transition-all translate-y-[-4px] duration-300 ease-out cursor-pointer">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
+<span class="font-['Inter'] font-medium text-[10px] uppercase tracking-widest mt-1">Wallet</span>
+</div>
+<!-- Active Tab: Profile -->
+<div class="flex flex-col items-center justify-center bg-gradient-to-br from-yellow-500 to-yellow-300 text-stone-900 rounded-full w-14 h-14 mb-2 shadow-lg translate-y-[-10px] transition-all">
+<span class="material-symbols-outlined" data-icon="person" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="hidden">Profile</span>
+</div>
+</nav>
+</body></html>

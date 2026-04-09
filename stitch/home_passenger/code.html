@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#dfdcdc",
+                        "outline-variant": "#afacac",
+                        "primary-container": "#fdd400",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-tertiary-fixed": "#3e4900",
+                        "inverse-surface": "#0e0e0e",
+                        "on-primary": "#fff2ce",
+                        "surface-dim": "#d6d4d3",
+                        "on-secondary-fixed-variant": "#5c5b5b",
+                        "surface-container": "#eae7e7",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#b02500",
+                        "on-primary-container": "#594a00",
+                        "inverse-primary": "#fdd400",
+                        "on-secondary": "#f5f2f1",
+                        "surface-container-high": "#e5e2e1",
+                        "on-error-container": "#520c00",
+                        "on-surface": "#2f2e2e",
+                        "on-tertiary": "#e6fe75",
+                        "error-container": "#f95630",
+                        "outline": "#787676",
+                        "primary-fixed": "#fdd400",
+                        "background": "#f9f6f5",
+                        "tertiary-fixed-dim": "#d0e862",
+                        "surface-container-highest": "#dfdcdc",
+                        "secondary-fixed-dim": "#d6d4d3",
+                        "tertiary-container": "#def76e",
+                        "on-secondary-fixed": "#403f3f",
+                        "on-error": "#ffefec",
+                        "secondary-container": "#e5e2e1",
+                        "error-dim": "#b92902",
+                        "surface": "#f9f6f5",
+                        "primary-fixed-dim": "#edc600",
+                        "surface-tint": "#6d5a00",
+                        "surface-container-low": "#f3f0ef",
+                        "secondary": "#5c5b5b",
+                        "inverse-on-surface": "#9e9c9c",
+                        "on-primary-fixed-variant": "#645300",
+                        "secondary-dim": "#504f4f",
+                        "on-background": "#2f2e2e",
+                        "on-surface-variant": "#5c5b5b",
+                        "tertiary-fixed": "#def76e",
+                        "surface-bright": "#f9f6f5",
+                        "tertiary": "#536200",
+                        "tertiary-dim": "#485500",
+                        "on-tertiary-fixed-variant": "#586700",
+                        "on-tertiary-container": "#4f5d00",
+                        "primary": "#6d5a00",
+                        "on-primary-fixed": "#433700",
+                        "on-secondary-container": "#525151",
+                        "primary-dim": "#5f4e00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .map-gradient-overlay {
+            background: linear-gradient(to bottom, rgba(249, 246, 245, 0.8) 0%, rgba(249, 246, 245, 0) 20%, rgba(249, 246, 245, 0) 70%, rgba(249, 246, 245, 0.9) 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-background overflow-hidden h-screen w-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/85 dark:bg-stone-900/85 backdrop-blur-md shadow-[0_12px_32px_rgba(47,46,46,0.06)]">
+<div class="flex justify-between items-center px-6 h-16 w-full max-w-screen-xl mx-auto">
+<button class="p-2 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors scale-95 active:scale-90 duration-200">
+<span class="material-symbols-outlined text-stone-500" data-icon="menu">menu</span>
+</button>
+<h1 class="text-xl font-black italic text-stone-900 dark:text-white font-['Plus_Jakarta_Sans'] tracking-tight">Kinetic Concierge</h1>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container">
+<img alt="User profile avatar" class="w-full h-full object-cover" data-alt="close-up portrait of a professional young man with a friendly smile, clean urban aesthetic, soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn01ZCercOdu3s3psUZo8trfCA8ibWueeCzj858hLlz4PkZo0IneZPHwu68qIFWpKtFgs4zfVZJj-P7BLrKKMsv44r3TdI9yMYM-jrCDyDcMhr6Lnn6kuUbnr9sQEqxxsVlzo1KWkB_d5Ajig92_o_qY-QCatPCx3puxyyzhDEg_RhhHaSeFhpDa4TkctXevwdiK4krQhYDhHLsox7G3KJ2_txKoVGzxxcf4Zb4FUsvn35oaMmh1M1-uDf43ETah_8rFSnT_CYU03d"/>
+</div>
+</div>
+</header>
+<!-- Main Content: Full Screen Map -->
+<main class="relative h-screen w-screen pt-16">
+<!-- Mock Map Background -->
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale-[20%] contrast-[90%]" data-alt="stylized aerial map view of a modern city grid with clean streets and park areas, soft desaturated colors" data-location="San Francisco" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0xM31jWCnKIgsoVLFmN0P1kI5zyKyRHlGUBd-dhYl1jCDdNi0qcZXgFPEUkXWUZt5N1mzU1DWI7v47KIWMKObQa2qmbD_LKEteLjmVuk8m8rYiGevLr_XNA5V53cTV6YyAX6d3V2gpfWUM_aW8BKP51q6NHd3fZH2gXKx6ELdrX2qjdpCA0ccq5PkDkQR7TIlxPPXxXcwBHdyjeL-nVD6Sq_P62wcaPvVZ-d57XHIzAXN3fo__lST62lntmkY2T5ziAotVai4fjnj"/>
+<div class="absolute inset-0 map-gradient-overlay pointer-events-none"></div>
+<!-- Taxi Pins (Mocked) -->
+<div class="absolute top-1/3 left-1/4">
+<div class="bg-primary-container p-2 rounded-full shadow-lg scale-90">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="local_taxi">local_taxi</span>
+</div>
+</div>
+<div class="absolute top-1/2 right-1/3">
+<div class="bg-primary-container p-2 rounded-full shadow-lg scale-95">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="local_taxi">local_taxi</span>
+</div>
+</div>
+<div class="absolute bottom-1/3 left-1/2">
+<div class="bg-white p-2 rounded-full shadow-2xl animate-pulse">
+<div class="w-4 h-4 bg-blue-500 rounded-full border-2 border-white"></div>
+</div>
+</div>
+</div>
+<!-- Floating UI Overlays -->
+<div class="relative z-10 w-full max-w-lg mx-auto px-6 flex flex-col h-full pointer-events-none">
+<!-- Search Bar Section -->
+<div class="mt-8 pointer-events-auto">
+<div class="bg-white/90 backdrop-blur-xl rounded-lg p-1.5 flex items-center shadow-[0_12px_32px_rgba(47,46,46,0.06)] border-none">
+<div class="pl-4 pr-3 py-2 flex items-center">
+<span class="material-symbols-outlined text-yellow-600" data-icon="search">search</span>
+</div>
+<input class="w-full bg-transparent border-none focus:ring-0 text-on-surface font-medium placeholder:text-outline py-3" placeholder="Where are we heading?" type="text"/>
+<div class="h-8 w-[1px] bg-outline-variant/30 mx-2"></div>
+<button class="pr-4 pl-2 text-stone-500">
+<span class="material-symbols-outlined" data-icon="schedule">schedule</span>
+</button>
+</div>
+</div>
+<!-- Bento Quick Access Cards -->
+<div class="mt-auto mb-32 grid grid-cols-2 gap-4 pointer-events-auto">
+<!-- Promo Card -->
+<div class="bg-primary-container rounded-lg p-5 flex flex-col justify-between shadow-lg aspect-square overflow-hidden relative group">
+<div class="z-10">
+<span class="material-symbols-outlined text-3xl text-on-primary-container" data-icon="sell" style="font-variation-settings: 'FILL' 1;">sell</span>
+<h3 class="mt-4 font-headline font-bold text-lg text-on-primary-container leading-tight">50% Off<br/>Your Next 3 Rides</h3>
+</div>
+<button class="z-10 bg-on-primary-container text-white text-xs font-bold w-fit px-4 py-2 rounded-full">CLAIM</button>
+<!-- Texture/Shape Decor -->
+<div class="absolute -bottom-8 -right-8 w-32 h-32 bg-yellow-400 rounded-full blur-2xl opacity-50"></div>
+</div>
+<!-- History/Favorite Card -->
+<div class="bg-white/90 backdrop-blur-md rounded-lg p-5 flex flex-col justify-between shadow-md aspect-square">
+<div>
+<span class="material-symbols-outlined text-3xl text-stone-400" data-icon="history">history</span>
+<h3 class="mt-4 font-headline font-bold text-lg text-on-surface leading-tight">Work Headquarters</h3>
+<p class="text-xs text-stone-500 mt-1">221B Baker Street</p>
+</div>
+<div class="flex items-center text-yellow-600 gap-1 text-sm font-bold">
+<span>BOOK NOW</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- FAB: Contextual to Home Screen -->
+<div class="fixed bottom-28 right-6 z-50">
+<button class="w-14 h-14 bg-white rounded-full shadow-2xl flex items-center justify-center text-stone-700 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="my_location">my_location</span>
+</button>
+</div>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-end pb-6 px-4 bg-white/90 dark:bg-stone-900/90 backdrop-blur-xl z-50 rounded-t-[3rem] shadow-[0_-10px_40px_rgba(0,0,0,0.04)]">
+<!-- Home (Active) -->
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-yellow-500 to-yellow-300 text-stone-900 rounded-full w-14 h-14 mb-2 shadow-lg translate-y-[-4px] duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+</a>
+<!-- Activity -->
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 pb-2 hover:text-yellow-500 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="local_taxi">local_taxi</span>
+<span class="font-['Inter'] font-medium text-[10px] uppercase tracking-widest mt-1">Activity</span>
+</a>
+<!-- Wallet -->
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 pb-2 hover:text-yellow-500 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
+<span class="font-['Inter'] font-medium text-[10px] uppercase tracking-widest mt-1">Wallet</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 pb-2 hover:text-yellow-500 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Inter'] font-medium text-[10px] uppercase tracking-widest mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kinetic Concierge - Ride Confirmed</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#dfdcdc",
+                    "outline-variant": "#afacac",
+                    "primary-container": "#fdd400",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-tertiary-fixed": "#3e4900",
+                    "inverse-surface": "#0e0e0e",
+                    "on-primary": "#fff2ce",
+                    "surface-dim": "#d6d4d3",
+                    "on-secondary-fixed-variant": "#5c5b5b",
+                    "surface-container": "#eae7e7",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#b02500",
+                    "on-primary-container": "#594a00",
+                    "inverse-primary": "#fdd400",
+                    "on-secondary": "#f5f2f1",
+                    "surface-container-high": "#e5e2e1",
+                    "on-error-container": "#520c00",
+                    "on-surface": "#2f2e2e",
+                    "on-tertiary": "#e6fe75",
+                    "error-container": "#f95630",
+                    "outline": "#787676",
+                    "primary-fixed": "#fdd400",
+                    "background": "#f9f6f5",
+                    "tertiary-fixed-dim": "#d0e862",
+                    "surface-container-highest": "#dfdcdc",
+                    "secondary-fixed-dim": "#d6d4d3",
+                    "tertiary-container": "#def76e",
+                    "on-secondary-fixed": "#403f3f",
+                    "on-error": "#ffefec",
+                    "secondary-container": "#e5e2e1",
+                    "error-dim": "#b92902",
+                    "surface": "#f9f6f5",
+                    "primary-fixed-dim": "#edc600",
+                    "surface-tint": "#6d5a00",
+                    "surface-container-low": "#f3f0ef",
+                    "secondary": "#5c5b5b",
+                    "inverse-on-surface": "#9e9c9c",
+                    "on-primary-fixed-variant": "#645300",
+                    "secondary-dim": "#504f4f",
+                    "on-background": "#2f2e2e",
+                    "on-surface-variant": "#5c5b5b",
+                    "tertiary-fixed": "#def76e",
+                    "surface-bright": "#f9f6f5",
+                    "tertiary": "#536200",
+                    "tertiary-dim": "#485500",
+                    "on-tertiary-fixed-variant": "#586700",
+                    "on-tertiary-container": "#4f5d00",
+                    "primary": "#6d5a00",
+                    "on-primary-fixed": "#433700",
+                    "on-secondary-container": "#525151",
+                    "primary-dim": "#5f4e00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-sheet {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(24px);
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #6d5a00 0%, #fdd400 100%);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f6f5;
+        }
+        h1, h2, .brand-font {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-surface min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-white/85 dark:bg-stone-900/85 backdrop-blur-md fixed top-0 w-full z-50 shadow-[0_12px_32px_rgba(47,46,46,0.06)] h-16 flex items-center">
+<div class="flex justify-between items-center px-6 w-full max-w-screen-xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="text-stone-500 hover:bg-stone-100 transition-colors p-2 rounded-full scale-95 active:scale-90 duration-200">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<span class="text-xl font-black italic text-stone-900 dark:text-white font-['Plus_Jakarta_Sans'] tracking-tight">Kinetic Concierge</span>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-highest border-2 border-primary-container">
+<img alt="User profile avatar" class="w-full h-full object-cover" data-alt="Close-up portrait of a professional man with a friendly expression and neat grooming against a clean studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBm7bLAig-QesoyQR8jVrDpWq6CG7PQE37NStjLAi6-OaLMRwv53SHPv4uoxiyrPPHyj3bFmWY3eSrPvaPkCLQ9qWziY1oC5FoS0kIWfu0MUubjkNYdBofTm46D6CxyCRAHYNfkJM1oCTzldoFrFmzwbBF8LmXIwK2jDenAlh7FCqUsEeYixpwV_mmOAIf9T2siD_K1OAQxA-gpxu1tolX_OaMKY8DoBYYxTZLQEhrd_WqOXJwpAaiSybOSSIXqbVjgpANgvXJmQdI"/>
+</div>
+</div>
+</header>
+<!-- Main Content: Task-Focused Screen (Nav Suppressed) -->
+<main class="flex-grow pt-24 pb-12 px-6 flex flex-col items-center">
+<div class="w-full max-w-lg space-y-8">
+<!-- Hero Confirmation Section -->
+<div class="relative overflow-hidden rounded-xl h-64 shadow-lg group">
+<div class="absolute inset-0 bg-stone-900/30 z-10"></div>
+<img alt="Street Map" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Aerial cinematic view of New York City streets at dusk with trailing yellow taxi lights and glowing street lamps" data-location="New York City" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpUoyqTsQRImz73cF8MrP1NMlZUlDEF1rzNM8IpDQs4PeS6uwdHdPFqbiqh4lx2IdOwkk7fb7OK-DIXluc12u2ZqfWBr0mEa2RwN9-Wq_JpxNpiPyl6gb4y_o-YcRup67MhCoyug5jMyAEn84BlZxNrbO_BMjwik1xsWvgJP1jsu38LQBuNhsO1uGAJIkhXT-gIVn9VpEX3IUYaq3sPlkwIWQB094XdO2ul6-jhUh4if8dfNPxnB4K45eTKg6ZXGE_8nOIn_a5JryT"/>
+<div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-6">
+<div class="bg-primary-container text-on-primary-container w-16 h-16 rounded-full flex items-center justify-center mb-4 shadow-xl">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h1 class="text-white text-3xl font-extrabold tracking-tight mb-1">Ride Confirmed</h1>
+<p class="text-white/90 font-medium label-md tracking-widest uppercase text-xs">Arriving in 4 Minutes</p>
+</div>
+</div>
+<!-- Kinetic Info Cards: Bento-ish Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Driver Card -->
+<div class="bg-surface-container-lowest glass-sheet p-6 rounded-lg flex flex-col items-center text-center shadow-[0_12px_32px_rgba(47,46,46,0.06)] border border-white/50">
+<div class="relative mb-4">
+<div class="w-20 h-20 rounded-full overflow-hidden border-4 border-primary-container shadow-inner">
+<img alt="Driver portrait" class="w-full h-full object-cover" data-alt="Smiling middle-aged male driver in a professional polo shirt, bright daylight lighting with a blurry car interior background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr0lLIC2Z10aQkE6xJ83JPAN8OMZrkiZriwCecod1CflRDkgAgJQnEn7L24l5S49a5-aZy3wxH9HOQg2YZvB99pDbHKSUDJffAyvk4BBrCHjEmhRDohegtDMjeH2kKYf0cAa5J7rd-M4bXqV55kupmzRbPdSORZWsVuX9uTXTRL0A54GxZzmxYsZQ0gOwRyhcO9p91DCZ8QrQq-lQN1qOIjtx_-tSt3-fqy1tRz2EyMg3ZmoIDIpFQx6HO1EPjIPFK3Izn54dcK-wM"/>
+</div>
+<div class="absolute -bottom-1 -right-1 bg-primary text-on-primary text-[10px] font-bold px-2 py-0.5 rounded-full shadow-sm flex items-center">
+                            4.9 <span class="material-symbols-outlined text-[10px] ml-1" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<h2 class="text-on-surface font-bold text-lg leading-tight">Alex Driver</h2>
+<p class="text-secondary text-sm font-medium">Gold Partner</p>
+<div class="flex gap-2 mt-4 w-full">
+<button class="flex-1 bg-surface-container-high hover:bg-surface-container-highest text-on-surface py-2 rounded-full transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg">chat</span>
+<span class="text-xs font-bold uppercase tracking-wider">Chat</span>
+</button>
+<button class="flex-1 bg-surface-container-high hover:bg-surface-container-highest text-on-surface py-2 rounded-full transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg">call</span>
+<span class="text-xs font-bold uppercase tracking-wider">Call</span>
+</button>
+</div>
+</div>
+<!-- Vehicle Card -->
+<div class="bg-surface-container-low p-6 rounded-lg flex flex-col justify-between shadow-[0_12px_32px_rgba(47,46,46,0.06)] border border-outline-variant/10">
+<div class="flex justify-between items-start">
+<div>
+<span class="inline-block bg-primary/10 text-primary text-[10px] font-black uppercase tracking-widest px-2 py-1 rounded-full mb-2">Luxury Class</span>
+<h2 class="text-xl font-extrabold text-on-surface leading-none">Tesla Model S</h2>
+<p class="text-secondary text-sm font-medium mt-1">Stellar White</p>
+</div>
+<span class="material-symbols-outlined text-primary text-3xl">electric_car</span>
+</div>
+<div class="mt-6">
+<div class="bg-inverse-surface text-white inline-block px-4 py-2 rounded-lg font-mono text-xl font-bold tracking-[0.2em] border-2 border-stone-700 shadow-lg">
+                            KNTK-2024
+                        </div>
+<p class="text-outline text-[10px] font-bold uppercase tracking-widest mt-2 px-1">Plate Number</p>
+</div>
+</div>
+</div>
+<!-- Details Section (No Divider rule applied - using background shift) -->
+<div class="space-y-4">
+<div class="bg-surface-container-low p-5 rounded-lg flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div class="flex-grow">
+<p class="text-outline text-[10px] font-bold uppercase tracking-tighter">Pickup Point</p>
+<p class="text-on-surface font-semibold truncate">Grand Central Terminal, NY</p>
+</div>
+</div>
+<div class="bg-surface-container-highest p-5 rounded-lg flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<div class="flex-grow">
+<p class="text-outline text-[10px] font-bold uppercase tracking-tighter">Fare Estimate</p>
+<p class="text-on-surface font-semibold">$42.50 • Apple Pay</p>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</div>
+</div>
+<!-- Primary Action -->
+<div class="pt-4 flex flex-col gap-3">
+<button class="kinetic-gradient text-white w-full py-5 rounded-full font-bold text-lg shadow-[0_12px_24px_rgba(109,90,0,0.3)] hover:scale-[1.02] active:scale-95 transition-transform">
+                    Track Ride Progress
+                </button>
+<button class="text-secondary font-bold text-sm uppercase tracking-widest py-3 hover:text-on-surface transition-colors">
+                    Cancel Trip
+                </button>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Suppressed for task focus per "The Destination Rule" -->
+</body></html>

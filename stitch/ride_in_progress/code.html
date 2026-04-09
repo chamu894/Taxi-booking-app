@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kinetic Concierge - Trip in Progress</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#dfdcdc",
+                    "outline-variant": "#afacac",
+                    "primary-container": "#fdd400",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-tertiary-fixed": "#3e4900",
+                    "inverse-surface": "#0e0e0e",
+                    "on-primary": "#fff2ce",
+                    "surface-dim": "#d6d4d3",
+                    "on-secondary-fixed-variant": "#5c5b5b",
+                    "surface-container": "#eae7e7",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#b02500",
+                    "on-primary-container": "#594a00",
+                    "inverse-primary": "#fdd400",
+                    "on-secondary": "#f5f2f1",
+                    "surface-container-high": "#e5e2e1",
+                    "on-error-container": "#520c00",
+                    "on-surface": "#2f2e2e",
+                    "on-tertiary": "#e6fe75",
+                    "error-container": "#f95630",
+                    "outline": "#787676",
+                    "primary-fixed": "#fdd400",
+                    "background": "#f9f6f5",
+                    "tertiary-fixed-dim": "#d0e862",
+                    "surface-container-highest": "#dfdcdc",
+                    "secondary-fixed-dim": "#d6d4d3",
+                    "tertiary-container": "#def76e",
+                    "on-secondary-fixed": "#403f3f",
+                    "on-error": "#ffefec",
+                    "secondary-container": "#e5e2e1",
+                    "error-dim": "#b92902",
+                    "surface": "#f9f6f5",
+                    "primary-fixed-dim": "#edc600",
+                    "surface-tint": "#6d5a00",
+                    "surface-container-low": "#f3f0ef",
+                    "secondary": "#5c5b5b",
+                    "inverse-on-surface": "#9e9c9c",
+                    "on-primary-fixed-variant": "#645300",
+                    "secondary-dim": "#504f4f",
+                    "on-background": "#2f2e2e",
+                    "on-surface-variant": "#5c5b5b",
+                    "tertiary-fixed": "#def76e",
+                    "surface-bright": "#f9f6f5",
+                    "tertiary": "#536200",
+                    "tertiary-dim": "#485500",
+                    "on-tertiary-fixed-variant": "#586700",
+                    "on-tertiary-container": "#4f5d00",
+                    "primary": "#6d5a00",
+                    "on-primary-fixed": "#433700",
+                    "on-secondary-container": "#525151",
+                    "primary-dim": "#5f4e00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body": [
+                            "Inter"
+                    ],
+                    "label": [
+                            "Inter"
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .trip-sheet-blur {
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-surface antialiased overflow-hidden h-screen w-screen">
+<!-- TopAppBar -->
+<nav class="bg-white/85 dark:bg-stone-900/85 backdrop-blur-md fixed top-0 w-full z-50 shadow-[0_12px_32px_rgba(47,46,46,0.06)]">
+<div class="flex justify-between items-center px-6 h-16 w-full max-w-screen-xl mx-auto">
+<button class="hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors scale-95 active:scale-90 duration-200 p-2 rounded-full">
+<span class="material-symbols-outlined text-yellow-600">menu</span>
+</button>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-xl font-black italic text-stone-900 dark:text-white">Kinetic Concierge</h1>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden border-2 border-primary-container">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="close up headshot of a stylish young man with a friendly expression outdoors in soft daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU9wyB9NCyvzPl9-8rIxh3kJHeAssiST47R32HzHKcxislMIxoqEFxExQjRLYC2zAUUPAzaSp8QTE_WE1_lOz_ddFx9cph4igY132eMkUXk47Fur3Y556l_1aMJDWN7LkNBT38mdis9k3bt9QPs1uf6DqCFeQrwBANsAjeWUCFVVzvaPjSlK7-l0ufD-V54eQj-sjM8TSCXeRBIX5mi1QQHbtyT0PNokq1auMgcx-I73AlOprLCDzTs6K160mn45zOEsOYwOO8xX4b"/>
+</div>
+</div>
+</nav>
+<!-- Map Background (Main Canvas) -->
+<main class="absolute inset-0 z-0">
+<div class="w-full h-full bg-surface-dim relative">
+<img class="w-full h-full object-cover grayscale opacity-60" data-alt="detailed dark minimalist city map layout with highlighted arterial roads and a subtle golden route line glowing" data-location="San Francisco" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgwgFOXnmvu8zw-1-UaCDlKmVqLu2WivS27K5kL4I3a2Amzbi6kBJlmO0KLfdKGCiSJbmRdqgZMhC2bZRyHgumQo7H3iogjTU5vjPkhH4GB_CVjiCXUvetCS9qJR_Alc1YXasYL1gxzTS-X5U0yF1xIDSE6A_Z8xax1XWjqoZX6iem-Wvmy72YERMCrIKgbgzId-7GAz-tP2IsmW8yFPTWxo-M0xTBj9iahuJVyGs7ylUMegxi4zIIwT2DqBUvyWf4hTwoEuTUvEtG"/>
+<!-- Floating Map Markers -->
+<div class="absolute top-[40%] left-[30%] -translate-x-1/2 -translate-y-1/2">
+<div class="relative flex flex-col items-center">
+<div class="bg-inverse-surface text-white px-3 py-1 rounded-full text-xs font-bold mb-2 shadow-lg">Start</div>
+<div class="w-4 h-4 bg-primary border-4 border-white rounded-full shadow-md"></div>
+</div>
+</div>
+<div class="absolute top-[60%] left-[60%] -translate-x-1/2 -translate-y-1/2">
+<div class="relative flex flex-col items-center">
+<div class="w-10 h-10 bg-primary-container flex items-center justify-center rounded-full shadow-2xl scale-110 border-2 border-white">
+<span class="material-symbols-outlined text-on-primary-container text-2xl">local_taxi</span>
+</div>
+</div>
+</div>
+<!-- Arrival Indicator (Floating) -->
+<div class="absolute top-24 left-1/2 -translate-x-1/2 w-auto">
+<div class="bg-surface-container-lowest/90 backdrop-blur-xl px-6 py-3 rounded-full flex items-center gap-3 shadow-xl border border-white/20">
+<div class="flex flex-col">
+<span class="font-headline font-extrabold text-2xl text-primary leading-none">8</span>
+<span class="text-[10px] font-label font-bold uppercase tracking-widest text-on-surface-variant">mins</span>
+</div>
+<div class="h-8 w-[1px] bg-outline-variant/30"></div>
+<div class="flex flex-col">
+<span class="text-xs font-label font-bold uppercase tracking-tighter text-on-surface-variant">Arrival at</span>
+<span class="font-headline font-bold text-lg text-on-surface leading-none">Market St.</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Trip Sheet (Glassmorphism) -->
+<div class="fixed bottom-0 left-0 w-full z-40">
+<div class="bg-surface-container-lowest/90 trip-sheet-blur rounded-t-xl px-6 pt-4 pb-12 shadow-[0_-12px_48px_rgba(0,0,0,0.12)] max-w-2xl mx-auto border-t border-white/40">
+<!-- Drag Handle -->
+<div class="w-12 h-1.5 bg-outline-variant/40 rounded-full mx-auto mb-6"></div>
+<!-- Header: Driver & Car Info -->
+<div class="flex items-center justify-between mb-8">
+<div class="flex items-center gap-4">
+<div class="relative">
+<div class="w-16 h-16 rounded-full overflow-hidden border-4 border-primary-container shadow-md">
+<img alt="Driver profile" class="w-full h-full object-cover" data-alt="headshot of a middle-aged professional chauffeur wearing a dark suit with a kind smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoEM3kVK9wSWMLJSSR9d6blSK-atYrY17d9M5ISPrWMhevGzxzYqGkwnmAJGs0d1JIpE5COwTmfIDgx8eDzA9DR2QeBzceifGRBcLYaY0CmBpNOm91kpLxgrhC6G6LDS3PnbQJu7JjhkNsOUR2s0GVRz0Sfa2c2qk19lECCU817vGfniMwPBBWqR6U5m5dvXEQPUwftyK7sI0mX8vxxXcvL_FlKZ1Uhqcajib2CrR8G_kTZ28T4MBgLPe4aJ0-jxtwjp0fBtJlf7Yo"/>
+</div>
+<div class="absolute -bottom-1 -right-1 bg-white rounded-full px-1.5 py-0.5 shadow flex items-center gap-0.5">
+<span class="text-[10px] font-bold text-on-surface">4.9</span>
+<span class="material-symbols-outlined text-[10px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<div>
+<h2 class="font-headline font-bold text-xl text-on-surface leading-tight">Marcus Henderson</h2>
+<div class="flex items-center gap-2 mt-1">
+<span class="bg-surface-container-highest px-3 py-0.5 rounded-full text-[11px] font-bold tracking-tight text-on-surface-variant uppercase">Tesla Model S</span>
+<span class="font-mono text-sm font-bold text-on-surface">KNC-4290</span>
+</div>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary hover:bg-primary-container transition-all active:scale-90">
+<span class="material-symbols-outlined">message</span>
+</button>
+<button class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container shadow-md hover:shadow-lg transition-all active:scale-90">
+<span class="material-symbols-outlined">call</span>
+</button>
+</div>
+</div>
+<!-- Ride Details Grid -->
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col gap-1">
+<span class="text-[10px] font-label font-bold uppercase tracking-widest text-on-surface-variant">Estimated Fare</span>
+<div class="flex items-end gap-1">
+<span class="font-headline font-bold text-2xl text-on-surface">$24.50</span>
+<span class="text-xs text-on-surface-variant mb-1">Total</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col gap-1">
+<span class="text-[10px] font-label font-bold uppercase tracking-widest text-on-surface-variant">Safety Pin</span>
+<div class="flex items-center gap-2">
+<span class="font-headline font-black text-2xl tracking-widest text-primary">8 8 2 1</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-3">
+<button class="w-full bg-gradient-to-br from-primary to-primary-container text-white font-headline font-extrabold py-4 rounded-lg shadow-lg hover:shadow-primary-container/20 transition-all active:scale-[0.98]">
+                    Share Trip Progress
+                </button>
+<button class="w-full bg-transparent border border-error/20 text-error font-headline font-bold py-3 rounded-lg hover:bg-error/5 transition-all active:scale-[0.98]">
+                    Cancel Ride
+                </button>
+</div>
+</div>
+</div>
+<!-- BottomNavBar (Hidden for transactional/focused screen as per instructions) -->
+<!-- Suppressed to prioritize the trip progress sheet and map focus -->
+</body></html>
