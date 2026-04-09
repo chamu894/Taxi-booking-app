@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:elevation="4dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Kinetic Concierge"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Create Account"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Join the concierge network today."
+                android:textColor="@color/on_surface_variant"
+                android:textSize="16sp" />
+
+            <!-- Account Type Toggle -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/bg_input"
+                android:orientation="horizontal"
+                android:padding="4dp">
+                <Button
+                    style="@style/Widget.Material3.Button.TonalButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Passenger"
+                    android:textAllCaps="false"
+                    app:cornerRadius="24dp" />
+                <Button
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Driver"
+                    android:textAllCaps="false"
+                    android:textColor="@color/secondary" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+
+            <!-- Full Name Field -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="8dp"
+                android:letterSpacing="0.1"
+                android:text="FULL NAME"
+                android:textColor="@color/secondary"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_input"
+                android:drawableStart="@android:drawable/ic_menu_myplaces"
+                android:drawablePadding="16dp"
+                android:hint="Alex Rivera"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="16dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- Email Field -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="8dp"
+                android:letterSpacing="0.1"
+                android:text="EMAIL ADDRESS"
+                android:textColor="@color/secondary"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_input"
+                android:drawableStart="@android:drawable/ic_dialog_email"
+                android:drawablePadding="16dp"
+                android:hint="alex@kinetic.com"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="16dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- Phone Field -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="8dp"
+                android:letterSpacing="0.1"
+                android:text="PHONE NUMBER"
+                android:textColor="@color/secondary"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_input"
+                android:drawableStart="@android:drawable/stat_sys_phone_call"
+                android:drawablePadding="16dp"
+                android:hint="+1 (555) 000-0000"
+                android:inputType="phone"
+                android:paddingHorizontal="16dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- Password Field -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="8dp"
+                android:letterSpacing="0.1"
+                android:text="SECURE PASSWORD"
+                android:textColor="@color/secondary"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_input"
+                android:drawableStart="@android:drawable/ic_lock_idle_lock"
+                android:drawablePadding="16dp"
+                android:hint="••••••••••••"
+                android:inputType="textPassword"
+                android:paddingHorizontal="16dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- Terms Checkbox -->
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I agree to the Terms of Service and Privacy Policy, ensuring a safe experience."
+                android:textSize="12sp"
+                android:textColor="@color/secondary" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:backgroundTint="@color/primary"
+                android:text="Create Account"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cornerRadius="32dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="24dp" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Already have an account? Log In"
+                android:textColor="@color/on_surface_variant"
+                android:paddingBottom="32dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

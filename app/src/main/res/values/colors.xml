@@ -2,4 +2,17 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    
+    <!-- Kinetic Concierge Theme Colors -->
+    <color name="primary">#fdd400</color>
+    <color name="primary_dim">#edc600</color>
+    <color name="on_primary">#594a00</color>
+    <color name="background">#f9f6f5</color>
+    <color name="surface">#0e0e0e</color>
+    <color name="on_surface_light">#2f2e2e</color>
+    <color name="on_surface_dark">#ffffff</color>
+    <color name="accent_yellow">#fdd400</color>
+    <color name="dark_footer">#0e0e0e</color>
+    <color name="text_hint">#787676</color>
+
 </resources>
